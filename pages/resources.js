@@ -31,18 +31,8 @@ export default function ResourcesPage(props) {
   };
   return (
     <div>
-      <Header
-        color="transparent"
-        brand="West Hillhurst Piano and Violin"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 50,
-          color: "white",
-        }}
-        {...rest}
-      />
-      <Parallax small filter image="/img/profile-bg.jpg" />
+      <Header rightLinks={<HeaderLinks />} fixed {...rest} />
+      <Parallax small filter image="/img/bg8.jpg" />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <GridContainer justify="center">

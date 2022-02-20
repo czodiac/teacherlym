@@ -31,25 +31,15 @@ export default function ProfilePage(props) {
   };
   return (
     <div>
-      <Header
-        color="transparent"
-        brand="West Hillhurst Piano and Violin"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 50,
-          color: "white",
-        }}
-        {...rest}
-      />
-      <Parallax small filter image="/img/profile-bg.jpg" />
+      <Header rightLinks={<HeaderLinks />} fixed {...rest} />
+      <Parallax small filter image="/img/bg8.jpg" />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>Profile</h3>
+                  <h3 className={classes.title}>Teacher Profile</h3>
                 </div>
               </div>
             </GridItem>
@@ -63,10 +53,9 @@ export default function ProfilePage(props) {
               >
                 Suzuki
               </a>
-              &nbsp;and Shinozaki method. It is a popular method in S. Korea,
-              Japan and China. Suzuki emphasizes learning music through ear
-              whereas Shinozaki emphasizes more on theories and academic
-              approaches.
+              &nbsp;and Shinozaki method. Suzuki emphasizes learning music
+              through ears whereas Shinozaki emphasizes more on theories and
+              academic approaches.
             </div>
             <div className={classes.subItem}>
               Violinist & Pianist Mrs. Lym: ​​

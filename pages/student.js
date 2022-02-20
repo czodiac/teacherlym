@@ -29,18 +29,8 @@ export default function StudentPage(props) {
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
     <div>
-      <Header
-        color="transparent"
-        brand="TeachLym.com"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 50,
-          color: "white",
-        }}
-        {...rest}
-      />
-      <Parallax small filter image="/img/profile-bg.jpg" />
+      <Header rightLinks={<HeaderLinks />} fixed {...rest} />
+      <Parallax small filter image="/img/bg8.jpg" />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>

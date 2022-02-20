@@ -63,7 +63,7 @@ export default function Header(props) {
   });
   const brandComponent = (
     <Link href="/profile" as="/profile">
-      <Button className={classes.title}>{brand}</Button>
+      <img alt="West Hillhurst Violin and Piano" src="./img/logo.gif" height="50px"/>
     </Link>
   );
   return (

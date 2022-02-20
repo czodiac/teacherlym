@@ -31,18 +31,8 @@ export default function VideoPage(props) {
   };
   return (
     <div>
-      <Header
-        color="transparent"
-        brand="West Hillhurst Piano and Violin"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 50,
-          color: "white",
-        }}
-        {...rest}
-      />
-      <Parallax small filter image="/img/profile-bg.jpg" />
+      <Header rightLinks={<HeaderLinks />} fixed {...rest} />
+      <Parallax small filter image="/img/bg8.jpg" />
       <div
         className={classNames(classes.main, classes.mainRaised, classes.center)}
       >
@@ -51,18 +41,16 @@ export default function VideoPage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>Lym's Studio</h3>
+                  <h3 className={classes.title}>Student Video</h3>
                 </div>
               </div>
             </GridItem>
           </GridContainer>
-          <h4>Promise of Love - 02:26</h4>
-          <h6>Both piano and violin played by Lym</h6>
-          <YouTube videoId="4yui7AnClxk" opts={opts} />
+          <YouTube videoId="Spp8tlvlMxc" opts={opts} />
           <br />
-          <h4>La vie en rose - 01:47</h4>
-          <h6>Both piano and violin played by Lym</h6>
-          <YouTube videoId="v5jO4nblLkw" opts={opts} />
+          <YouTube videoId="GcEJTZ1XGJ8" opts={opts} />
+          <br />
+          <YouTube videoId="PZelpcdYjL4" opts={opts} />
         </div>
       </div>
       <Footer />

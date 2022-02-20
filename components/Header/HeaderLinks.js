@@ -28,7 +28,7 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <Link href="profile" passHref={true}>
         <Button className={classes.navLink} color="transparent">
-          About Lym
+          Profile
         </Button>
       </Link>
       <Link href="policy" passHref={true}>

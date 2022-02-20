@@ -47,6 +47,7 @@ h2 {
 h3 {
   font-size: 1.5625rem;
   line-height: 1.4em;
+  color: #874102; 
 }
 h4 {
   font-size: 1.125rem;
@@ -58,7 +59,6 @@ h5 {
 }
 h6 {
   font-size: 0.75rem;
-  text-transform: uppercase;
   font-weight: 500;
 }
 p {
@@ -96,13 +96,13 @@ legend {
 }
 
 a {
-  color: $link-color;
+  color: #795020;
   text-decoration: none;
   background-color: transparent;
   &:hover,
   &:focus {
-    color: darken($link-color, 5%);
-    text-decoration: none;
+    color: #814b0d;
+    text-decoration: underline;
   }
 }
 

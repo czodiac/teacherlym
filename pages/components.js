@@ -37,17 +37,7 @@ export default function Components(props) {
   const { ...rest } = props;
   return (
     <div>
-      <Header
-        brand="NextJS Material Kit"
-        rightLinks={<HeaderLinks />}
-        fixed
-        color="transparent"
-        changeColorOnScroll={{
-          height: 400,
-          color: "white",
-        }}
-        {...rest}
-      />
+      <Header rightLinks={<HeaderLinks />} fixed {...rest} />
       <Parallax image="/img/nextjs_header.jpg">
         <div className={classes.container}>
           <GridContainer>
