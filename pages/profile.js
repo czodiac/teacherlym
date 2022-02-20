@@ -1,20 +1,17 @@
 import React from "react";
-// nodejs library that concatenates classes
+// nodejs divbrary that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Camera from "@material-ui/icons/Camera";
-import Palette from "@material-ui/icons/Palette";
-import Favorite from "@material-ui/icons/Favorite";
+import Check from "@material-ui/icons/Check";
+import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 // core components
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
-import Button from "components/CustomButtons/Button.js";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
-import NavPills from "components/NavPills/NavPills.js";
 import Parallax from "components/Parallax/Parallax.js";
 
 import styles from "styles/jss/nextjs-material-kit/pages/profilePage.js";
@@ -34,172 +31,102 @@ export default function ProfilePage(props) {
     <div>
       <Header
         color="transparent"
-        brand="NextJS Material Kit"
+        brand="TeachLym.com"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
-          height: 200,
+          height: 50,
           color: "white",
         }}
         {...rest}
       />
       <Parallax small filter image="/img/profile-bg.jpg" />
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <div>
           <div className={classes.container}>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
-                  <div>
-                    <img
-                      src="/img/faces/christian.jpg"
-                      alt="..."
-                      className={imageClasses}
-                    />
-                  </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Christian Louboutin</h3>
-                    <h6>DESIGNER</h6>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-twitter"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-instagram"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <i className={"fab fa-facebook"} />
-                    </Button>
+                    <h3 className={classes.title}>Lym Kim</h3>
+                    <h6>Musician</h6>
                   </div>
                 </div>
               </GridItem>
             </GridContainer>
             <div className={classes.description}>
-              <p>
-                An artist of considerable range, Chet Faker — the name taken by
-                Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
-                and records all of his own music, giving it a warm, intimate
-                feel with a solid groove structure.{" "}
-              </p>
+              <div>
+                Her teaching method combines&nbsp;
+                <a
+                  href="https://en.wikipedia.org/wiki/Suzuki_method"
+                  target="_blank"
+                >
+                  Suzuki
+                </a>
+                &nbsp;and Shinozaki method. It is a popular method in S. Korea,
+                Japan and China. Suzuki emphasizes learning music through ear
+                whereas Shinozaki emphasizes more on theories and academic
+                approaches. More about her: ​​
+              </div>
+              <div className={classes.subItem}>
+                <KeyboardArrowRightIcon className={classes.chkIcon} />
+                is a pupil of Michael Barta(Winner of&nbsp;
+                <a
+                  href="https://en.wikipedia.org/wiki/International_Tchaikovsky_Competition"
+                  target="_blank"
+                >
+                  Tchaikovsky International Competition
+                </a>
+                , Pupil of Legendary Violinist{" "}
+                <a
+                  href="https://en.wikipedia.org/wiki/Arthur_Grumiaux"
+                  target="_blank"
+                >
+                  Arthur Grumiaux
+                </a>
+                )
+              </div>
+              <div className={classes.subItem}>
+                <KeyboardArrowRightIcon className={classes.chkIcon} />
+                was 1st violinist at York symphony orchestra, Mississauga
+                symphony orchestra and symphonies in Korea
+              </div>
+              <div className={classes.subItem}>
+                <KeyboardArrowRightIcon className={classes.chkIcon} />
+                is a certified Suzuki teacher trained at Royal Conservatory of
+                Music.
+              </div>
+              <div className={classes.subItem}>
+                <KeyboardArrowRightIcon className={classes.chkIcon} />
+                holds a bachelor's degree in orchestral performance
+              </div>
+              <div className={classes.subItem}>
+                <KeyboardArrowRightIcon className={classes.chkIcon} />
+                studied Suzuki pedagogy at Royal Conservatory of Music in
+                Toronto
+              </div>
+              <div className={classes.subItem}>
+                <KeyboardArrowRightIcon className={classes.chkIcon} />
+                is a member of{" "}
+                <a href="https://suzukiassociation.org/" target="_blank">
+                  Suzuki Association of the Americas
+                </a>
+                (Member #: 115618) and AFM (American Federation of Musicians)
+              </div>
+              <div className={classes.subItem}>
+                <KeyboardArrowRightIcon className={classes.chkIcon} />
+                is a certified member of &nbsp;
+                <a href="http://www.rcmusic.ca/" target="_blank">
+                  Royal Conservatory of Music
+                </a>
+                (RCM Teacher #: 108136) so she can help her student prepare for RCM Exams
+              </div>
+              <div className={classes.subItem}>
+                <KeyboardArrowRightIcon className={classes.chkIcon} />
+                has no criminal record
+              </div>
             </div>
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
-                <NavPills
-                  alignCenter
-                  color="primary"
-                  tabs={[
-                    {
-                      tabButton: "Studio",
-                      tabIcon: Camera,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-1.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-2.jpg"
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-5.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-4.jpg"
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      ),
-                    },
-                    {
-                      tabButton: "Work",
-                      tabIcon: Palette,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/olu-eletu.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/clem-onojeghuo.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/cynthia-del-rio.jpg"
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/mariya-georgieva.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/clem-onojegaw.jpg"
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      ),
-                    },
-                    {
-                      tabButton: "Favorite",
-                      tabIcon: Favorite,
-                      tabContent: (
-                        <GridContainer justify="center">
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/mariya-georgieva.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-3.jpg"
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                          <GridItem xs={12} sm={12} md={4}>
-                            <img
-                              alt="..."
-                              src="/img/examples/clem-onojeghuo.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/olu-eletu.jpg"
-                              className={navImageClasses}
-                            />
-                            <img
-                              alt="..."
-                              src="/img/examples/studio-1.jpg"
-                              className={navImageClasses}
-                            />
-                          </GridItem>
-                        </GridContainer>
-                      ),
-                    },
-                  ]}
-                />
-              </GridItem>
-            </GridContainer>
           </div>
         </div>
-      </div>
       <Footer />
     </div>
   );

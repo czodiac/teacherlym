@@ -2,7 +2,7 @@ import { container, title } from "styles/jss/nextjs-material-kit.js";
 
 import imagesStyle from "styles/jss/nextjs-material-kit/imagesStyles.js";
 
-const profilePageStyle = {
+const policyPageStyle = {
   container,
   profile: {
     textAlign: "center",
@@ -43,6 +43,10 @@ const profilePageStyle = {
     minHeight: "32px",
     textDecoration: "none",
   },
+  subTitle: {
+    ...title,
+    textAlign: "left",
+  },
   navWrapper: {
     margin: "20px auto 50px auto",
     textAlign: "center",
@@ -57,6 +61,9 @@ const profilePageStyle = {
     listStyleType: "none",
     textAlign: "left",
   },
+  left: {
+    textAlign: "left",
+  },
 };
 
-export default profilePageStyle;
+export default policyPageStyle;
