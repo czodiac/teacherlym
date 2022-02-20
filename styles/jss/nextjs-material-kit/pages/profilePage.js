@@ -14,7 +14,7 @@ const profilePageStyle = {
     },
   },
   description: {
-    margin: "20px auto 0",
+    margin: "0 auto 0",
     maxWidth: "1000px",
     textAlign: "center !important",
   },

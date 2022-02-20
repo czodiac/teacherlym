@@ -49,8 +49,7 @@ export default function ProfilePage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>Lym Kim</h3>
-                  <h6>Musician</h6>
+                  <h3 className={classes.title}>Profile</h3>
                 </div>
               </div>
             </GridItem>
@@ -99,10 +98,6 @@ export default function ProfilePage(props) {
               <KeyboardArrowRightIcon className={classes.chkIcon} />
               is a certified Suzuki teacher trained at Royal Conservatory of
               Music.
-            </div>
-            <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              holds a bachelor's degree in orchestral performance
             </div>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
