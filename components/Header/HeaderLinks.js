@@ -56,7 +56,7 @@ export default function HeaderLinks(props) {
           Resources
         </Button>
       </Link>
-      <Link href="mailto:junglelym0214@gmail.com" passHref={true}>
+      <Link href="contact" passHref={true}>
         <Button className={classes.navLink} color="transparent">
           Contact
         </Button>

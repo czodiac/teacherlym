@@ -31,7 +31,7 @@ export default function StudioPage(props) {
     <div>
       <Header
         color="transparent"
-        brand="TeachLym.com"
+        brand="West Hillhurst Piano and Violin"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{

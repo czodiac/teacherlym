@@ -15,7 +15,7 @@ import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
-import styles from "styles/jss/nextjs-material-kit/pages/policyPage.js";
+import styles from "styles/jss/nextjs-material-kit/pages/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
@@ -32,7 +32,7 @@ export default function PolicyPage(props) {
     <div>
       <Header
         color="transparent"
-        brand="TeachLym.com"
+        brand="West Hillhurst Piano and Violin"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{

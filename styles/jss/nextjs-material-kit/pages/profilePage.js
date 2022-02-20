@@ -15,10 +15,8 @@ const profilePageStyle = {
   },
   description: {
     margin: "20px auto 0",
-    maxWidth: "600px",
-    color: "#999",
+    maxWidth: "1000px",
     textAlign: "center !important",
-    padding: "0 0 30px 0",
   },
   name: {
     marginTop: "0px",
@@ -28,6 +26,7 @@ const profilePageStyle = {
     background: "#FFFFFF",
     position: "relative",
     zIndex: "3",
+    padding: "0 0 30px 0",
   },
   mainRaised: {
     margin: "-60px 30px 0px",
@@ -43,6 +42,10 @@ const profilePageStyle = {
     minHeight: "32px",
     textDecoration: "none",
   },
+  subTitle: {
+    ...title,
+    textAlign: "left",
+  },
   navWrapper: {
     margin: "20px auto 50px auto",
     textAlign: "center",
@@ -55,6 +58,12 @@ const profilePageStyle = {
   subItem: {
     padding: "20px 10px 0px 10px",
     listStyleType: "none",
+    textAlign: "left",
+  },
+  center: {
+    textAlign: "center",
+  },
+  left: {
     textAlign: "left",
   },
 };

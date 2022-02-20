@@ -7,6 +7,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Check from "@material-ui/icons/Check";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 // core components
+import YouTube from "react-youtube";
 import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -21,17 +22,18 @@ const useStyles = makeStyles(styles);
 export default function VideoPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
-  const imageClasses = classNames(
-    classes.imgRaised,
-    classes.imgRoundedCircle,
-    classes.imgFluid
-  );
-  const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
+  const opts = {
+    height: "563",
+    width: "1000",
+    playerVars: {
+      autoplay: 0,
+    },
+  };
   return (
     <div>
       <Header
         color="transparent"
-        brand="TeachLym.com"
+        brand="West Hillhurst Piano and Violin"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -41,45 +43,26 @@ export default function VideoPage(props) {
         {...rest}
       />
       <Parallax small filter image="/img/profile-bg.jpg" />
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        <div>
-          <div className={classes.container}>
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={6}>
-                <div className={classes.profile}>
-                  <div className={classes.name}>
-                    <h3 className={classes.title}>Lym's Studio</h3>
-                  </div>
+      <div
+        className={classNames(classes.main, classes.mainRaised, classes.center)}
+      >
+        <div className={classes.container}>
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={6}>
+              <div className={classes.profile}>
+                <div className={classes.name}>
+                  <h3 className={classes.title}>Lym's Studio</h3>
                 </div>
-              </GridItem>
-            </GridContainer>
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
-                <GridContainer justify="center">
-                  <GridItem xs={12} sm={12} md={12}>
-                    <img
-                      alt="..."
-                      src="/img/studio/room.webp"
-                      className={navImageClasses}
-                      title="Studio"
-                    />
-                    <img
-                      alt="..."
-                      src="/img/studio/piano.webp"
-                      className={navImageClasses}
-                      title="Piano"
-                    />
-                    <img
-                      alt="..."
-                      src="/img/studio/room2.webp"
-                      className={navImageClasses}
-                      title="Studio"
-                    />
-                  </GridItem>
-                </GridContainer>
-              </GridItem>
-            </GridContainer>
-          </div>
+              </div>
+            </GridItem>
+          </GridContainer>
+          <h4>Promise of Love - 02:26</h4>
+          <h6>Both piano and violin played by Lym</h6>
+          <YouTube videoId="4yui7AnClxk" opts={opts} />
+          <br />
+          <h4>La vie en rose - 01:47</h4>
+          <h6>Both piano and violin played by Lym</h6>
+          <YouTube videoId="v5jO4nblLkw" opts={opts} />
         </div>
       </div>
       <Footer />

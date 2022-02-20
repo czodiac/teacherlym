@@ -19,16 +19,9 @@ import styles from "styles/jss/nextjs-material-kit/pages/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
-export default function ResourcesPage(props) {
+export default function ContactPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
-  const opts = {
-    height: "390",
-    width: "640",
-    playerVars: {
-      autoplay: 0,
-    },
-  };
   return (
     <div>
       <Header
@@ -49,7 +42,7 @@ export default function ResourcesPage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>Resources</h3>
+                  <h3 className={classes.title}>Contact Lym</h3>
                 </div>
               </div>
             </GridItem>
@@ -57,35 +50,16 @@ export default function ResourcesPage(props) {
           <div className={classes.description}>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
-              Music score :&nbsp;
-              <a href="http://www.imslp.org" target="_blank">
-                imslp.org
-              </a>
+              2329 Bowness Road NW, Calgary AB T2N 3L6
             </div>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
-              If you want to be an ochestra musician, visit&nbsp;
-              <a href="http://www.violinexcerpts.com/" target="_blank">
-                ViolinExcerpts.com
-              </a>
+              (403) 689-6485
             </div>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
-              Suzuki books can be purchased from&nbsp;
-              <a href="http://www.sharmusic.com" target="_blank">
-                sharmusic.com
-              </a>
-            </div>
-            <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              Shinozaki violin books can only be purchased from&nbsp;
-              <a
-                href="http://www.amazon.com/s/ref=nb_sb_ss_i_2_9?url=search-alias%3Daps&amp;field-keywords=shinozaki+violin+method&amp;sprefix=shinozaki+violin+method%2Caps%2C232"
-                target="_blank"
-                rel="noreferrer noopener"
-                class="focus-within"
-              >
-                amazon.com
+              <a href="mailto:junglelym0214@gmail.com" target="_blank">
+                junglelym0214@gmail.com
               </a>
             </div>
           </div>
