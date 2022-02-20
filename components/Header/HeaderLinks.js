@@ -33,12 +33,12 @@ export default function HeaderLinks(props) {
       </Link>
       <Link href="policy" passHref={true}>
         <Button className={classes.navLink} color="transparent">
-          Policy
+          Rate/Policy
         </Button>
       </Link>
       <Link href="student" passHref={true}>
         <Button className={classes.navLink} color="transparent">
-          Student
+          Students
         </Button>
       </Link>
       <Link href="videos" passHref={true}>

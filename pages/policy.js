@@ -38,7 +38,7 @@ export default function PolicyPage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>Policy</h3>
+                  <h3 className={classes.title}>Rate / Policy</h3>
                 </div>
               </div>
             </GridItem>

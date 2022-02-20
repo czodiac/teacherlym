@@ -38,7 +38,7 @@ export default function StudentPage(props) {
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Lym's Student</h3>
+                    <h3 className={classes.title}>Lym's Students</h3>
                   </div>
                 </div>
               </GridItem>
@@ -46,6 +46,20 @@ export default function StudentPage(props) {
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
                 <GridContainer justify="center">
+                  <GridItem xs={12} sm={12} md={6}>
+                    <img
+                      alt="..."
+                      src="/img/student/lennon2.JPG"
+                      className={navImageClasses}
+                      title="Lennon"
+                    />
+                    <img
+                      alt="..."
+                      src="/img/student/student.jpg"
+                      className={navImageClasses}
+                      title="Student"
+                    />
+                  </GridItem>
                   <GridItem xs={12} sm={12} md={6}>
                     <img
                       alt="..."
@@ -58,6 +72,34 @@ export default function StudentPage(props) {
                       src="/img/student/Learning Bow hold with bowhold buddies_J.webp"
                       className={navImageClasses}
                       title="Learning Bow hold with bowhold buddies"
+                    />
+                  </GridItem>
+                  <GridItem xs={12} sm={12} md={6}>
+                    <img
+                      alt="..."
+                      src="/img/student/ian.jpg"
+                      className={navImageClasses}
+                      title="Ian"
+                    />
+                    <img
+                      alt="..."
+                      src="/img/student/isac.jpg"
+                      className={navImageClasses}
+                      title="Isac"
+                    />
+                  </GridItem>
+                  <GridItem xs={12} sm={12} md={6}>
+                    <img
+                      alt="..."
+                      src="/img/student/lennon.JPG"
+                      className={navImageClasses}
+                      title="Lennon"
+                    />
+                    <img
+                      alt="..."
+                      src="/img/student/ida.jpg"
+                      className={navImageClasses}
+                      title="Ida"
                     />
                   </GridItem>
                   <GridItem xs={12} sm={12} md={6}>

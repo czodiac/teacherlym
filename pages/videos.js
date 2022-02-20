@@ -46,6 +46,10 @@ export default function VideoPage(props) {
               </div>
             </GridItem>
           </GridContainer>
+          <YouTube videoId="tTrwSdU9B84" opts={opts} />
+          <br />
+          <YouTube videoId="qLFtiyCBWfc" opts={opts} />
+          <br />
           <YouTube videoId="Spp8tlvlMxc" opts={opts} />
           <br />
           <YouTube videoId="GcEJTZ1XGJ8" opts={opts} />

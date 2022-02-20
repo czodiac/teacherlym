@@ -29,6 +29,9 @@ export default function ProfilePage(props) {
       autoplay: 0,
     },
   };
+  function onShowOriginal() {
+    window.open("/img/mainPage_Original.png", "_blank");
+  }
   return (
     <div>
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
@@ -81,7 +84,7 @@ export default function ProfilePage(props) {
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
               was 1st violinist at York symphony orchestra, Mississauga symphony
-              orchestra and symphonies in Korea
+              orchestra in Ontario and symphonies in Korea
             </div>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
@@ -111,7 +114,11 @@ export default function ProfilePage(props) {
             </div>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
-              has no criminal record
+              has no criminal record (
+              <a href="./img/criminal_record.jpg" target="_blank">
+                Sept 2015 document
+              </a>
+              )
             </div>
             <br />
             <YouTube videoId="1RWD7yMxlTA" opts={opts} />
