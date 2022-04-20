@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 // nodejs divbrary that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
@@ -47,9 +48,11 @@ export default function PolicyPage(props) {
             <h4 className={classes.subTitle}>Tuition Fee (in CAD)</h4>
             <div className={classes.left}>
               $39 for 30 min. $55 for 45 min. $65 for an hour. Add $15 for a
-              lesson at your place. Please{" "}
-              <a href="mailto:junglelym0214@gmail.com">email</a> for group
-              lesson rate. ​
+              lesson at your place. Please&nbsp;
+              <Link href="contact" passHref={true}>
+                contact Mrs.Lym
+              </Link>
+              &nbsp;for group lesson rate. ​
             </div>
             <h4 className={classes.subTitle}>Cancellation</h4>
             <List disablePadding>

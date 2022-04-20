@@ -44,7 +44,7 @@ export default function ContactPage(props) {
             </div>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
-              (403) 689-6485
+              Mobile: (403) 689-6485
             </div>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
