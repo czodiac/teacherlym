@@ -8,4 +8,13 @@ module.exports = withPlugins([[withImages]], {
     config.resolve.modules.push(path.resolve("./"));
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: '/components',
+        destination: '/profile',
+        permanent: true,
+      },
+    ]
+  },
 });
