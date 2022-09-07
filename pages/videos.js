@@ -37,6 +37,19 @@ export default function VideoPage(props) {
         className={classNames(classes.main, classes.mainRaised, classes.center)}
       >
         <div className={classes.container}>
+        <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={6}>
+              <div className={classes.profile}>
+                <div className={classes.name}>
+                  <h3 className={classes.title}>Lym's Video</h3>
+                </div>
+              </div>
+            </GridItem>
+          </GridContainer>
+          <YouTube videoId="1RWD7yMxlTA" opts={opts} />
+            Lym can be seen at 1:59 & 2:43 in the above video clip when viewed
+            in full screen.
+          <br />
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>

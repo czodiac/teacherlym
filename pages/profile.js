@@ -120,10 +120,6 @@ export default function ProfilePage(props) {
               </a>
               )
             </div>
-            <br />
-            <YouTube videoId="1RWD7yMxlTA" opts={opts} />
-            Lym can be seen at 1:59 & 2:43 in the above video clip when viewed
-            in full screen.
           </div>
         </div>
       </div>
