@@ -11,7 +11,7 @@ module.exports = withPlugins([[withImages]], {
   async redirects() {
     return [
       {
-        source: '/components',
+        source: '/defaultsite',
         destination: '/profile',
         permanent: true,
       },
