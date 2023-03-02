@@ -57,12 +57,6 @@ export default function StudioPage(props) {
                       className={navImageClasses}
                       title="Piano"
                     />
-                    <img
-                      alt="..."
-                      src="/img/studio/room2.webp"
-                      className={navImageClasses}
-                      title="Studio"
-                    />
                   </GridItem>
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
