@@ -44,8 +44,6 @@ export default function StudioPage(props) {
               </GridItem>
             </GridContainer>
             <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={8} className={classes.navWrapper}>
-                <GridContainer justify="center">
                   <GridItem xs={12} sm={12} md={12}>
                     <img
                       alt="..."
@@ -66,7 +64,24 @@ export default function StudioPage(props) {
                       title="Studio"
                     />
                   </GridItem>
-                </GridContainer>
+              <GridItem xs={12} sm={12} md={6}>
+                <div className={classes.profile}>
+                  <div className={classes.name}>
+                    <h3 className={classes.title}>Violin for rent</h3>
+                  </div>
+                  <div className={classes.name}>
+                    One 1/2 size violin can be rented for $15/month. Fine tuners(significantly saves teacher and student's time to adjust string tension), new strings, 2 bows and a case are included. 
+                    <br></br><br></br>
+                  </div>
+                </div>
+              </GridItem>
+              <GridItem xs={12} sm={12} md={12}>
+                    <img
+                      alt="..."
+                      src="/img/studio/for-rent.jpg"
+                      className={navImageClasses}
+                      title="1/2 size violin for rent"
+                    />
               </GridItem>
             </GridContainer>
           </div>
