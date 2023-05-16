@@ -30,7 +30,7 @@ export default function StudentPage(props) {
   return (
     <div>
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
-      <Parallax small filter image="/img/bg8.jpg" />
+      <Parallax filter image="/img/stage.png" />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
           <div className={classes.container}>

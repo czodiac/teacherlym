@@ -14,44 +14,46 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
-
+import Link from "next/link";
 import styles from "styles/jss/nextjs-material-kit/pages/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
-export default function ContactPage(props) {
+export default function HomePage(props) {
   const classes = useStyles();
   const { ...rest } = props;
+  const opts = {
+    playerVars: {
+      autoplay: 0,
+    },
+  };
+  function onShowOriginal() {
+    window.open("/img/mainPage_Original.png", "_blank");
+  }
   return (
     <div>
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
-      <Parallax filter image="/img/bg8.jpg" />
+      <Parallax filter image="/img/kid_group.png" />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>Contact Lym</h3>
+                  <h3 className={classes.title}>Welcome to West Hillhurst Piano and Violin</h3>
                 </div>
               </div>
             </GridItem>
           </GridContainer>
           <div className={classes.description}>
             <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              2329 Bowness Road NW, Calgary AB T2N 3L6
-            </div>
+            West Hillhurst Piano and Violin is a music education facility situated in West Hillhurst, Calgary AB. We specialize in providing personalized, one-on-one music lessons to individuals of various age groups and proficiency levels within the Calgary area. Our primary objective is to foster the development of students' musical abilities and comprehension through engaging and captivating instructional methods.
+            </div> 
             <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              Mobile: (403) 689-6485
-            </div>
-            <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              <a href="mailto:junglelym0214@gmail.com" target="_blank">
-                junglelym0214@gmail.com
-              </a>
-            </div>
+            <Link href="kids_piano" passHref={true}>
+                YouTube videos on how I teach children
+            </Link>
+            </div> 
           </div>
         </div>
       </div>

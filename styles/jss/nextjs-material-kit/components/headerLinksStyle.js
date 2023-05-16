@@ -112,6 +112,13 @@ const headerLinksStyle = (theme) => ({
     marginRight: "15px",
     fontWeight: "400",
   },
+  LargeLink: {
+    fontSize: "18px",
+    fontWeight: "800",
+    textDecoration: "underline",
+    textDecorationColor: "#f19a20",
+    textDecorationThickness: "8px",
+  },
   dropdownLink: {
     "&,&:hover,&:focus": {
       color: "inherit",

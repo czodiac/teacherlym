@@ -13,9 +13,6 @@ const parallaxStyle = (theme) => ({
     alignItems: "center",
   },
   filter: {
-    "&:before": {
-      background: "rgba(213, 179, 145, 0.3)",
-    },
     "&:after,&:before": {
       position: "absolute",
       zIndex: "1",
@@ -29,6 +26,9 @@ const parallaxStyle = (theme) => ({
   },
   small: {
     height: "800px",
+  },
+  min: {
+    height: "330px",
   },
   parallaxResponsive: {
     [theme.breakpoints.down("md")]: {

@@ -32,7 +32,7 @@ export default function PolicyPage(props) {
   return (
     <div>
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
-      <Parallax small filter image="/img/bg8.jpg" />
+      <Parallax min filter />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <GridContainer justify="center">
@@ -47,32 +47,29 @@ export default function PolicyPage(props) {
           <div className={classes.description}>
             <h4 className={classes.subTitle}>Tuition Fee (in CAD)</h4>
             <div className={classes.left}>
-              $39 for 30 min. $55 for 45 min. $65 for an hour. Add $15 for a
+              $40 for 30 min. $55 for 45 min. $70 for an hour. Add $15 for a
               lesson at your place. Please&nbsp;
               <Link href="contact" passHref={true}>
                 contact Mrs.Lym
               </Link>
-              &nbsp;for group lesson rate. ​
+              &nbsp;for the group lesson rate. ​
             </div>
             <h4 className={classes.subTitle}>Cancellation</h4>
             <List disablePadding>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                At least 24 hours notice is required. Otherwise no make up
-                lesson/refund or credit can be issued.
+                At least 24 hours' notice is required; otherwise, no makeup lesson, refund, or credit can be issued.
               </ListItem>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                Credit from a cancellation is non-refundable and may only be
-                used towards make-up lesson.
+                Credit from a cancellation is non-refundable and may only be used towards a make-up lesson.
               </ListItem>
             </List>
             <h4 className={classes.subTitle}>Make-up Lesson/Rescheduling</h4>
             <List disablePadding>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                Maximum of 3 make-up lessons per year will be granted with at
-                least 24 hours notice.
+                3 make-up lessons per year can be granted with at least 24 hours' notice.
               </ListItem>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
@@ -85,14 +82,7 @@ export default function PolicyPage(props) {
               </ListItem>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                With 24 hour notice, a student can reschedule a lesson in the
-                same month only. Missed Lessons cannot be applied as credits
-                towards following month. (Please understand that enrolling for a
-                lesson is a purchase of teacher's time, prepared in advance to
-                be free from interruptions and distractions. Since the time
-                passes whether a student uses it or not, a lesson missed is time
-                lost. This is why the payment for a cancelled lesson can not be
-                carried over to the next payment.)
+                With 24-hour notice, a student can reschedule a lesson in the same month only. Missed lessons cannot be applied as credits towards the following month. Please understand that enrolling for a lesson is a purchase of the teacher's time, prepared in advance to be free from interruptions and distractions. Since the time passes whether a student uses it or not, a missed lesson is time lost. This is why the payment for a canceled lesson cannot be carried over to the next payment.
               </ListItem>
             </List>
             <h4 className={classes.subTitle}>Termination</h4>

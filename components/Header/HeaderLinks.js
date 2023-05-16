@@ -26,6 +26,16 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
+      <Link href="kids_piano" passHref={true}>
+        <Button className={classes.navLink} color="transparent">
+        <img src="/img/bear.png" width="45px"/><p className={classes.LargeLink}>Kids' Piano</p>
+        </Button>
+      </Link>
+      <Link href="home" passHref={true}>
+        <Button className={classes.navLink} color="transparent">
+          Home
+        </Button>
+      </Link>
       <Link href="profile" passHref={true}>
         <Button className={classes.navLink} color="transparent">
           Profile
@@ -44,16 +54,6 @@ export default function HeaderLinks(props) {
       <Link href="videos" passHref={true}>
         <Button className={classes.navLink} color="transparent">
           Videos
-        </Button>
-      </Link>
-      <Link href="studio" passHref={true}>
-        <Button className={classes.navLink} color="transparent">
-          Studio
-        </Button>
-      </Link>
-      <Link href="resources" passHref={true}>
-        <Button className={classes.navLink} color="transparent">
-          Resources
         </Button>
       </Link>
       <Link href="contact" passHref={true}>

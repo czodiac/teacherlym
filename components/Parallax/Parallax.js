@@ -40,6 +40,7 @@ export default function Parallax(props) {
     style,
     image,
     small,
+    min,
     responsive,
   } = props;
   const classes = useStyles();
@@ -47,6 +48,7 @@ export default function Parallax(props) {
     [classes.parallax]: true,
     [classes.filter]: filter,
     [classes.small]: small,
+    [classes.min]: min,
     [classes.parallaxResponsive]: responsive,
     [className]: className !== undefined,
   });

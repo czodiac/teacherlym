@@ -35,7 +35,7 @@ export default function ProfilePage(props) {
   return (
     <div>
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
-      <Parallax small filter image="/img/bg8.jpg" />
+      <Parallax filter image="/img/bg8.jpg" />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <GridContainer justify="center">
