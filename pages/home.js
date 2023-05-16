@@ -46,13 +46,14 @@ export default function HomePage(props) {
             </GridItem>
           </GridContainer>
           <div className={classes.description}>
-            <div className={classes.subItem}>
-            West Hillhurst Piano and Violin is a music education facility situated in West Hillhurst, Calgary AB. We specialize in providing personalized, one-on-one music lessons to individuals of various age groups and proficiency levels within the Calgary area. Our primary objective is to foster the development of students' musical abilities and comprehension through engaging and captivating instructional methods.
-            </div> 
+            
             <div className={classes.subItem}>
             <Link href="kids_piano" passHref={true}>
-                YouTube videos on how I teach children
+                Check out YouTube videos on how I teach children
             </Link>
+            </div> 
+            <div className={classes.subItem}>
+            West Hillhurst Piano and Violin is a music education facility situated in West Hillhurst, Calgary AB. We specialize in providing personalized, one-on-one music lessons to individuals of various age groups and proficiency levels within the Calgary area. Our primary objective is to foster the development of students' musical abilities and comprehension through engaging and captivating instructional methods.
             </div> 
           </div>
         </div>
