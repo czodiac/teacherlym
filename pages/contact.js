@@ -40,6 +40,7 @@ export default function ContactPage(props) {
           <div className={classes.description}>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
+              <strong>Address: </strong>
               <a
                 target="_blank"
                 href="https://goo.gl/maps/7HfS9wBwMSRBVanz8?coh=178573&entry=tt"
@@ -48,13 +49,14 @@ export default function ContactPage(props) {
             </div>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
-              Mobile: (403) 689-6485
-            </div>
-            <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              <strong>Email: </strong> 
               <a href="mailto:junglelym0214@gmail.com" target="_blank">
                 junglelym0214@gmail.com
               </a>
+            </div>
+            <div className={classes.subItem}>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              <strong>Mobile: </strong> (403) 689-6485
             </div>
           </div>
         </div>
