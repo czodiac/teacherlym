@@ -40,7 +40,11 @@ export default function ContactPage(props) {
           <div className={classes.description}>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
-              2329 Bowness Road NW, Calgary AB T2N 3L6
+              <a
+                target="_blank"
+                href="https://goo.gl/maps/7HfS9wBwMSRBVanz8?coh=178573&entry=tt"
+                rel="noopener"
+              >2329 Bowness Road NW, Calgary AB T2N 3L6</a>
             </div>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
