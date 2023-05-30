@@ -66,6 +66,8 @@ export default function KidsPianoPage(props) {
             <YouTube videoId="23eO7AuKp8Y" opts={opts} />
             <YouTube videoId="xoPuaJJ5Fh4" opts={opts} />
             <YouTube videoId="GpOkzy50eAY" opts={opts} />
+            <YouTube videoId="9wSRptXNfRE" opts={opts} />
+            <YouTube videoId="b-C8WkI82KE" opts={opts} />
           </div>
         </div>
       </div>
