@@ -49,7 +49,7 @@ export default function KidsPianoPage(props) {
           </GridContainer>
           <div className={classes.description}>
             <div className={classes.subItem}>
-              As a dedicated teacher, I've always thought traditional teaching
+              I've always thought traditional teaching
               methods could be improved. So, I decided to explore alternative
               approaches and find a better way to teach piano to children.
             </div>

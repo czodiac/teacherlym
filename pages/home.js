@@ -49,7 +49,7 @@ export default function HomePage(props) {
             
             <div className={classes.subItem}>
             <Link href="kids_piano" passHref={true}>
-                Check out YouTube videos on how I teach children
+                Videos on how I teach children
             </Link>
             </div> 
             <div className={classes.subItem}>
