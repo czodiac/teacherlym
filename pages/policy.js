@@ -47,29 +47,44 @@ export default function PolicyPage(props) {
           <div className={classes.description}>
             <h4 className={classes.subTitle}>Tuition Fee (in CAD)</h4>
             <div className={classes.left}>
-              $40 for 30 min. $55 for 45 min. $70 for an hour. Add $15 for a
-              lesson at your place. Please&nbsp;
+              This rate is for lessons conducted at Mrs. Lym's
+              studio. Please note that an additional fee of $15 will be applied
+              for lessons conducted at your desired location. For group lesson rates, kindly reach out to {" "}
               <Link href="contact" passHref={true}>
-                contact Mrs.Lym
+                Mrs. Lym
               </Link>
-              &nbsp;for the group lesson rate. ​
+              .
+              <ListItem>
+                <KeyboardArrowRightIcon className={classes.chkIcon} />
+                30 minute session: $40
+              </ListItem>{" "}
+              <ListItem>
+                <KeyboardArrowRightIcon className={classes.chkIcon} />
+                40 minute session: $55
+              </ListItem>{" "}
+              <ListItem>
+                <KeyboardArrowRightIcon className={classes.chkIcon} />1 hour
+                session: $70
+              </ListItem>{" "}
             </div>
             <h4 className={classes.subTitle}>Cancellation</h4>
             <List disablePadding>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                At least 24 hours' notice is required; otherwise, no makeup lesson, refund, or credit can be issued.
+                At least 24 hours' notice is required; otherwise, no makeup
+                lesson, refund, or credit can be issued.
               </ListItem>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                Credit from a cancellation is non-refundable and may only be used towards a make-up lesson.
+                Credit from a cancellation is non-refundable and may only be
+                used towards a make-up lesson.
               </ListItem>
             </List>
             <h4 className={classes.subTitle}>Make-up Lesson/Rescheduling</h4>
             <List disablePadding>
               <ListItem>
-                <KeyboardArrowRightIcon className={classes.chkIcon} />
-                3 make-up lessons per year can be granted with at least 24 hours' notice.
+                <KeyboardArrowRightIcon className={classes.chkIcon} />3 make-up
+                lessons per year can be granted with at least 24 hours' notice.
               </ListItem>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
@@ -82,7 +97,14 @@ export default function PolicyPage(props) {
               </ListItem>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                With 24-hour notice, a student can reschedule a lesson in the same month only. Missed lessons cannot be applied as credits towards the following month. Please understand that enrolling for a lesson is a purchase of the teacher's time, prepared in advance to be free from interruptions and distractions. Since the time passes whether a student uses it or not, a missed lesson is time lost. This is why the payment for a canceled lesson cannot be carried over to the next payment.
+                With 24-hour notice, a student can reschedule a lesson in the
+                same month only. Missed lessons cannot be applied as credits
+                towards the following month. Please understand that enrolling
+                for a lesson is a purchase of the teacher's time, prepared in
+                advance to be free from interruptions and distractions. Since
+                the time passes whether a student uses it or not, a missed
+                lesson is time lost. This is why the payment for a canceled
+                lesson cannot be carried over to the next payment.
               </ListItem>
             </List>
             <h4 className={classes.subTitle}>Termination</h4>
