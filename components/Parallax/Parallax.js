@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 import { makeStyles } from "@material-ui/core/styles";
 
 // core components
-import styles from "styles/jss/nextjs-material-kit/components/parallaxStyle.js";
+import styles from "/styles/jss/nextjs-material-kit/components/parallaxStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -40,6 +40,8 @@ export default function Parallax(props) {
     style,
     image,
     small,
+    medium,
+    large,
     min,
     responsive,
   } = props;
@@ -48,6 +50,8 @@ export default function Parallax(props) {
     [classes.parallax]: true,
     [classes.filter]: filter,
     [classes.small]: small,
+    [classes.medium]: medium,
+    [classes.large]: large,
     [classes.min]: min,
     [classes.parallaxResponsive]: responsive,
     [className]: className !== undefined,

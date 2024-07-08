@@ -25,23 +25,13 @@ class MyDocument extends Document {
             href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
             rel="stylesheet"
           />
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          {/* <!-- Nepcha Analytics (nepcha.com) -->
+          <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. --> */}
           <script
-            async
-            src={`https://www.googletagmanager.com/gtag/js?id=G-PRVFPTST4S`}
-          />
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-PRVFPTST4S', {
-              page_path: window.location.pathname,
-            });
-          `,
-            }}
-          />
+            defer
+            data-site="YOUR_DOMAIN_HERE"
+            src="https://api.nepcha.com/js/nepcha-analytics.js"
+          ></script>
         </Head>
         <body>
           <div id="page-transition"></div>

@@ -3,19 +3,16 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-import Check from "@material-ui/icons/Check";
-import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 // core components
 import YouTube from "react-youtube";
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
-import Parallax from "components/Parallax/Parallax.js";
+import Header from "/components/Header/Header.js";
+import Footer from "/components/Footer/Footer.js";
+import GridContainer from "/components/Grid/GridContainer.js";
+import GridItem from "/components/Grid/GridItem.js";
+import HeaderLinks from "/components/Header/HeaderLinks.js";
+import Parallax from "/components/Parallax/Parallax.js";
 
-import styles from "styles/jss/nextjs-material-kit/pages/profilePage.js";
+import styles from "/styles/jss/nextjs-material-kit/pages/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
@@ -49,9 +46,9 @@ export default function KidsPianoPage(props) {
           </GridContainer>
           <div className={classes.description}>
             <div className={classes.subItem}>
-              I've always thought traditional teaching
-              methods could be improved. So, I decided to explore alternative
-              approaches and find a better way to teach piano to children.
+              I've always thought traditional teaching methods could be
+              improved. So, I decided to explore alternative approaches and find
+              a better way to teach piano to children.
             </div>
             <div className={classes.subItem}>
               During my research, I came across Elga Lusher, a Hungarian

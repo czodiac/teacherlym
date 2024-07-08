@@ -47,7 +47,6 @@ h2 {
 h3 {
   font-size: 1.5625rem;
   line-height: 1.4em;
-  color: #874102; 
 }
 h4 {
   font-size: 1.125rem;
@@ -59,6 +58,7 @@ h5 {
 }
 h6 {
   font-size: 0.75rem;
+  text-transform: uppercase;
   font-weight: 500;
 }
 p {
@@ -74,7 +74,7 @@ html {
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  background-color: #e5e5e5;
+  background-color: #fff4e5;
   color: $black-color;
   margin: 0;
   font-size: 1rem;
@@ -96,12 +96,13 @@ legend {
 }
 
 a {
-  color: #795020;
+  color: $link-color;
+  text-decoration: none;
   background-color: transparent;
   &:hover,
   &:focus {
-    color: #814b0d;
-    text-decoration: underline;
+    color: darken($link-color, 5%);
+    text-decoration: none;
   }
 }
 

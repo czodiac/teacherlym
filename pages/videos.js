@@ -3,19 +3,14 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-import Check from "@material-ui/icons/Check";
-import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 // core components
 import YouTube from "react-youtube";
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
-import Parallax from "components/Parallax/Parallax.js";
+import Header from "/components/Header/Header.js";
+import Footer from "/components/Footer/Footer.js";
+import HeaderLinks from "/components/Header/HeaderLinks.js";
+import Parallax from "/components/Parallax/Parallax.js";
 
-import styles from "styles/jss/nextjs-material-kit/pages/profilePage.js";
+import styles from "/styles/jss/nextjs-material-kit/pages/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
@@ -33,12 +28,14 @@ export default function VideoPage(props) {
     <div>
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
       <Parallax min filter />
-      <div className={classNames(classes.main, classes.mainRaised, classes.center)}>
+      <div
+        className={classNames(classes.main, classes.mainRaised, classes.center)}
+      >
         <div className={classes.container}>
           <h3 className={classes.title}>Lym's Video</h3>
           <YouTube videoId="1RWD7yMxlTA" opts={opts} />
-            Lym can be seen at 1:59 & 2:43 in the above video clip when viewed
-            in full screen.
+          Lym can be seen at 1:59 & 2:43 in the above video clip when viewed in
+          full screen.
           <br />
           <h3 className={classes.title}>Student Video</h3>
           <YouTube videoId="tTrwSdU9B84" opts={opts} />

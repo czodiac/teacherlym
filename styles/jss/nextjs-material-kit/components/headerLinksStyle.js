@@ -1,6 +1,6 @@
-import { defaultFont } from "styles/jss/nextjs-material-kit.js";
+import { defaultFont } from "/styles/jss/nextjs-material-kit.js";
 
-import tooltip from "styles/jss/nextjs-material-kit/tooltipsStyle.js";
+import tooltip from "/styles/jss/nextjs-material-kit/tooltipsStyle.js";
 
 const headerLinksStyle = (theme) => ({
   list: {
@@ -37,20 +37,18 @@ const headerLinksStyle = (theme) => ({
     padding: "0 !important",
   },
   navLink: {
-    color: "#874102 !important",
+    color: "inherit",
     position: "relative",
     padding: "0.9375rem",
-    fontWeight: "500",
+    fontWeight: "800",
     fontSize: "14px",
-    textTransform: "inherit",
+    textTransform: "initial",
     borderRadius: "3px",
     lineHeight: "20px",
-    textDecoration: "none",
     margin: "0px",
     display: "inline-flex",
     "&:hover,&:focus": {
-      color: "inherit",
-      background: "#fbefe4",
+      color: "#88743c",
     },
     [theme.breakpoints.down("sm")]: {
       width: "calc(100% - 30px)",
@@ -62,6 +60,10 @@ const headerLinksStyle = (theme) => ({
         justifyContent: "flex-start",
       },
     },
+  },
+  navLinkActive: {
+    color: "inherit",
+    backgroundColor: "#f9c783",
   },
   notificationNavLink: {
     [theme.breakpoints.down("md")]: {
@@ -94,10 +96,6 @@ const headerLinksStyle = (theme) => ({
     margin: "0px",
     display: "inline-flex",
   },
-  navLinkActive: {
-    color: "inherit",
-    backgroundColor: "rgba(255, 255, 255, 0.1)",
-  },
   icons: {
     width: "20px",
     height: "20px",
@@ -107,17 +105,6 @@ const headerLinksStyle = (theme) => ({
     position: "relative",
     fontSize: "20px !important",
     marginRight: "4px",
-  },
-  headerLink: {
-    marginRight: "15px",
-    fontWeight: "400",
-  },
-  LargeLink: {
-    fontSize: "18px",
-    fontWeight: "800",
-    textDecoration: "underline",
-    textDecorationColor: "#f19a20",
-    textDecorationThickness: "8px",
   },
   dropdownLink: {
     "&,&:hover,&:focus": {

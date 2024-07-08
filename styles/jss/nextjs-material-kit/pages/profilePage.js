@@ -1,6 +1,6 @@
-import { container, title } from "styles/jss/nextjs-material-kit.js";
+import { container, title } from "/styles/jss/nextjs-material-kit.js";
 
-import imagesStyle from "styles/jss/nextjs-material-kit/imagesStyles.js";
+import imagesStyle from "/styles/jss/nextjs-material-kit/imagesStyles.js";
 
 const profilePageStyle = {
   container,
@@ -64,6 +64,21 @@ const profilePageStyle = {
     textAlign: "center",
   },
   left: {
+    textAlign: "left",
+  },
+  right: {
+    textAlign: "right",
+  },
+  profileimg: {
+    borderRadius: "25px",
+    border: "1px solid #ddd",
+    padding: "5px",
+  },
+  addBox: {
+    background: "#fffaf4",
+    border: "1px solid #ddd",
+    margin: "15px 0 0 0",
+    padding: "10px 10px 0px 10px",
     textAlign: "left",
   },
 };

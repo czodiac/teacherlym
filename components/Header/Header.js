@@ -15,7 +15,7 @@ import Drawer from "@material-ui/core/Drawer";
 // @material-ui/icons
 import Menu from "@material-ui/icons/Menu";
 // core components
-import styles from "styles/jss/nextjs-material-kit/components/headerStyle.js";
+import styles from "/styles/jss/nextjs-material-kit/components/headerStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -63,7 +63,11 @@ export default function Header(props) {
   });
   const brandComponent = (
     <Link href="/profile" as="/profile">
-      <img alt="West Hillhurst Violin and Piano" src="./img/logo.gif" height="50px"/>
+      <img
+        alt="West Hillhurst Violin and Piano"
+        src="./img/logo.gif"
+        height="50px"
+      />
     </Link>
   );
   return (

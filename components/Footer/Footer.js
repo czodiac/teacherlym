@@ -11,9 +11,7 @@ import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
 import Favorite from "@material-ui/icons/Favorite";
 
-import styles from "styles/jss/nextjs-material-kit/components/footerStyle.js";
-import { useRouter } from "next/router"
-import { useEffect } from "react"
+import styles from "/styles/jss/nextjs-material-kit/components/footerStyle.js";
 
 const useStyles = makeStyles(styles);
 
@@ -28,29 +26,6 @@ export default function Footer(props) {
     [classes.a]: true,
     [classes.footerWhiteFont]: whiteFont,
   });
-
-  // <Google Analytics code to track page view and click event.>
-  const GA_TRACKING_ID = "G-PRVFPTST4S"; //Google Tracking ID
-
-  // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
-  const pageview = url => {
-    window.gtag("config", GA_TRACKING_ID, {
-      page_path: url,
-    })
-  };
-  
-  const router = useRouter();
-  useEffect(() => {
-    const handleRouteChange = url => {
-      pageview(url)
-    }
-    router.events.on("routeChangeComplete", handleRouteChange)
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange)
-    }
-  }, [router.events]);
-  // </Google Analytics code to track page view and click event.>
-
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>

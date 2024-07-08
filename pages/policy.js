@@ -4,19 +4,17 @@ import Link from "next/link";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-import Check from "@material-ui/icons/Check";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 // core components
-import { List, ListItem, ListItemIcon, ListItemText } from "@material-ui/core";
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
-import Parallax from "components/Parallax/Parallax.js";
+import { List, ListItem } from "@material-ui/core";
+import Header from "/components/Header/Header.js";
+import Footer from "/components/Footer/Footer.js";
+import GridContainer from "/components/Grid/GridContainer.js";
+import GridItem from "/components/Grid/GridItem.js";
+import HeaderLinks from "/components/Header/HeaderLinks.js";
+import Parallax from "/components/Parallax/Parallax.js";
 
-import styles from "styles/jss/nextjs-material-kit/pages/profilePage.js";
+import styles from "/styles/jss/nextjs-material-kit/pages/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
@@ -47,9 +45,10 @@ export default function PolicyPage(props) {
           <div className={classes.description}>
             <h4 className={classes.subTitle}>Tuition Fee (in CAD)</h4>
             <div className={classes.left}>
-              This rate is for lessons conducted at Mrs. Lym's
-              studio. Please note that an additional fee of $15 will be applied
-              for lessons conducted at your desired location. For group lesson rates, kindly reach out to {" "}
+              This rate is for lessons conducted at Mrs. Lym's studio. Please
+              note that an additional fee of $15 will be applied for lessons
+              conducted at your desired location. For group lesson rates, kindly
+              reach out to{" "}
               <Link href="contact" passHref={true}>
                 Mrs. Lym
               </Link>

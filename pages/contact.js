@@ -4,18 +4,16 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
-import Check from "@material-ui/icons/Check";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 // core components
-import YouTube from "react-youtube";
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
-import Parallax from "components/Parallax/Parallax.js";
+import Header from "/components/Header/Header.js";
+import Footer from "/components/Footer/Footer.js";
+import GridContainer from "/components/Grid/GridContainer.js";
+import GridItem from "/components/Grid/GridItem.js";
+import HeaderLinks from "/components/Header/HeaderLinks.js";
+import Parallax from "/components/Parallax/Parallax.js";
 
-import styles from "styles/jss/nextjs-material-kit/pages/profilePage.js";
+import styles from "/styles/jss/nextjs-material-kit/pages/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
@@ -43,16 +41,16 @@ export default function ContactPage(props) {
               <strong>Address: </strong>
               <a
                 target="_blank"
-                href="https://goo.gl/maps/7HfS9wBwMSRBVanz8?coh=178573&entry=tt"
+                href="https://maps.app.goo.gl/E15AmrM8kV1foQ9V7"
                 rel="noopener"
-              >2329 Bowness Road NW, Calgary AB T2N 3L6</a>
+              >
+                301 14 St NW 205 Room2, Calgary, AB T2N 1Z7
+              </a>
             </div>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
-              <strong>Email: </strong> 
-              <a href="mailto:junglelym0214@gmail.com" target="_blank">
-                junglelym0214@gmail.com
-              </a>
+              <strong>Email: </strong>
+              <a href="mailto:admin@lymteacher.com">admin@lymteacher.com</a>
             </div>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
