@@ -32,6 +32,9 @@ const headerStyle = {
     justifyContent: "flex-start",
     position: "relative",
     zIndex: "unset",
+    "@media (max-width: 960px)": {
+      marginTop: "0",
+    },
   },
   absolute: {
     position: "absolute",

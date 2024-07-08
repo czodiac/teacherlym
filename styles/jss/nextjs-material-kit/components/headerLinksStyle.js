@@ -12,6 +12,9 @@ const headerLinksStyle = (theme) => ({
     padding: "5px 0", // Adjust padding as needed
     backgroundColor: "#663011", // Example background color
     zIndex: 1000, // Ensure it's above other elements
+    [theme.breakpoints.down("xs")]: {
+      position: "relative", // Change to relative on smaller screens
+    },
   },
   whiteLink: {
     color: "#f0e8e1",
