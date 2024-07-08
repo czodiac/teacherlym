@@ -33,9 +33,19 @@ export default function VideoPage(props) {
       >
         <div className={classes.container}>
           <h3 className={classes.title}>Lym's Video</h3>
+          <div className={classes.videoExpl}>
+            Lym can be seen at 1:59 & 2:43 in the above video clip when viewed
+            in full screen.
+          </div>
           <YouTube videoId="1RWD7yMxlTA" opts={opts} />
-          Lym can be seen at 1:59 & 2:43 in the above video clip when viewed in
-          full screen.
+          <br />
+          <h3 className={classes.title}>
+            West Hillhurst Piano & Violin 2024 Spring Recital{" "}
+          </h3>
+          <div className={classes.videoExpl}>Full version: 29 mins 27 sec</div>
+          <YouTube videoId="gt7pxfuwCYk" opts={opts} />
+          <div className={classes.videoExpl}>Short version: 4 mins 8 sec</div>
+          <YouTube videoId="S_EQx6aTzk4" opts={opts} />
           <br />
           <h3 className={classes.title}>Student Video</h3>
           <YouTube videoId="tTrwSdU9B84" opts={opts} />

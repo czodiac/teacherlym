@@ -45,89 +45,217 @@ export default function PolicyPage(props) {
           <div className={classes.description}>
             <h4 className={classes.subTitle}>Tuition Fee (in CAD)</h4>
             <div className={classes.left}>
-              This rate is for lessons conducted at Mrs. Lym's studio. Please
-              note that an additional fee of $15 will be applied for lessons
-              conducted at your desired location. For group lesson rates, kindly
-              reach out to{" "}
-              <Link href="contact" passHref={true}>
-                Mrs. Lym
-              </Link>
-              .
+              Rates are based on the number of weeks in each month.
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                30 minute session: $40
-              </ListItem>{" "}
+                30 minute session: $40 per session
+              </ListItem>
+              <div className={classes.subListItem}>
+                <KeyboardArrowRightIcon className={classes.chkIconSub} />
+                $160 per month (for 4 weeks)
+              </div>
+              <div className={classes.subListItem}>
+                <KeyboardArrowRightIcon className={classes.chkIconSub} />
+                $200 per month (for 5 weeks)
+              </div>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                40 minute session: $55
-              </ListItem>{" "}
+                40 minute session: $55 per session
+              </ListItem>
+              <div className={classes.subListItem}>
+                <KeyboardArrowRightIcon className={classes.chkIconSub} />
+                $220 per month (for 4 weeks)
+              </div>
+              <div className={classes.subListItem}>
+                <KeyboardArrowRightIcon className={classes.chkIconSub} />
+                $275 per month (for 5 weeks)
+              </div>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />1 hour
-                session: $70
-              </ListItem>{" "}
+                session: $70 per session
+              </ListItem>
+              <div className={classes.subListItem}>
+                <KeyboardArrowRightIcon className={classes.chkIconSub} />
+                $280 per month (for 4 weeks)
+              </div>
+              <div className={classes.subListItem}>
+                <KeyboardArrowRightIcon className={classes.chkIconSub} />
+                $350 per month (for 5 weeks)
+              </div>
+              <div className={classes.marginTop}>
+                * For July and August, no monthly payment is required. You can
+                pay per session.
+              </div>
+              <div className={classes.marginTop}>
+                * New students starting lessons part way through a month will
+                have their 1st month's fee prorated based on the number of
+                lessons remaining in the month.
+              </div>
+              <div className={classes.marginTop}>
+                <span className={classes.redBold}>* Important:</span> We do not
+                deduct rates for missed classes from monthly payments, even with
+                advance notice. Missed class time also cannot roll over to the
+                next month. Monthly commitments ensure space is reserved and
+                spots are paid for.
+              </div>
             </div>
-            <h4 className={classes.subTitle}>Cancellation</h4>
-            <List disablePadding>
-              <ListItem>
-                <KeyboardArrowRightIcon className={classes.chkIcon} />
-                At least 24 hours' notice is required; otherwise, no makeup
-                lesson, refund, or credit can be issued.
-              </ListItem>
-              <ListItem>
-                <KeyboardArrowRightIcon className={classes.chkIcon} />
-                Credit from a cancellation is non-refundable and may only be
-                used towards a make-up lesson.
-              </ListItem>
-            </List>
-            <h4 className={classes.subTitle}>Make-up Lesson/Rescheduling</h4>
-            <List disablePadding>
-              <ListItem>
-                <KeyboardArrowRightIcon className={classes.chkIcon} />3 make-up
-                lessons per year can be granted with at least 24 hours' notice.
-              </ListItem>
-              <ListItem>
-                <KeyboardArrowRightIcon className={classes.chkIcon} />
-                Make-up lessons not used after 3 months will be considered
-                forfeited.​
-              </ListItem>
-              <ListItem>
-                <KeyboardArrowRightIcon className={classes.chkIcon} />A
-                scheduled make-up lesson can not be rescheduled for any reason.
-              </ListItem>
-              <ListItem>
-                <KeyboardArrowRightIcon className={classes.chkIcon} />
-                With 24-hour notice, a student can reschedule a lesson in the
-                same month only. Missed lessons cannot be applied as credits
-                towards the following month. Please understand that enrolling
-                for a lesson is a purchase of the teacher's time, prepared in
-                advance to be free from interruptions and distractions. Since
-                the time passes whether a student uses it or not, a missed
-                lesson is time lost. This is why the payment for a canceled
-                lesson cannot be carried over to the next payment.
-              </ListItem>
-            </List>
-            <h4 className={classes.subTitle}>Termination</h4>
-            <List disablePadding>
-              <ListItem>
-                <KeyboardArrowRightIcon className={classes.chkIcon} />2 weeks
-                notice is required to withdraw.
-              </ListItem>
-              <ListItem>
-                <KeyboardArrowRightIcon className={classes.chkIcon} />
-                Credits from missed lessons are non-refundable upon termination.
-                However, those may be used towards make-up lessons.
-              </ListItem>
-            </List>
+            ​<h4 className={classes.subTitle}>Lesson Fee Policy</h4>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Payment for lessons is due on the 1st of each month. We accept
+              payment via e-transfer or cash. ​
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Invoices will be sent during the last week of each month.
+            </ListItem>
+            ​<h4 className={classes.subTitle}>E-transfer Instructions</h4>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Address: junglelym0214@gmail.com
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Recipient: LYM KIM
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              No password is needed as it is set up for auto-deposit.
+            </ListItem>
+            ​<h4 className={classes.subTitle}>Late Payment Policy</h4>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              If payment is not received by the 1st of the month, a reminder
+              will be sent.
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Lessons will be paused if payment remains overdue for more than 20
+              days.
+            </ListItem>
+            <h4 className={classes.subTitle}>Student Absence Policy</h4>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              No refunds, credits, rescheduling, or make-up lessons are
+              available for student absences. If a student misses a lesson, they
+              forfeit the lesson.
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              This includes absences due to travel, conflicts (such as sports
+              games or school activities), illness, weather conditions, natural
+              disasters, traffic delays/accidents, or any other reasons.
+            </ListItem>
+            <h4 className={classes.subTitle}>Why No Make-Up Lessons?</h4>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Reserved Time Slots: Each student’s lesson time is reserved
+              exclusively for them. A make-up lesson policy would disrupt the
+              schedule and fairness for other students.
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Full Schedule: Given the full schedule, accommodating make-up
+              lessons is very difficult.
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Most music lesson providers choose not to offer make-up lessons as
+              a standard policy. This ensures consistent scheduling and allows
+              teachers to maintain a reliable lesson structure.
+            </ListItem>
+            <h4 className={classes.subTitle}>Lateness Policy</h4>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} /> Time lost
+              due to a student's lateness cannot be made up, as the teacher will
+              have other students scheduled after your lesson.
+            </ListItem>
+            <h4 className={classes.subTitle}>Teacher Absences</h4>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Any lessons canceled by the instructor will be made up at a
+              mutually agreeable time.
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Teachers may schedule a substitute teacher from time to time.
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              If a student cancels or does not attend a scheduled make-up
+              lesson, the make-up lesson is forfeited.
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              In case of teacher illness, particularly if contagious, the
+              teacher may schedule online lessons as an alternative
+            </ListItem>
+            <h4 className={classes.subTitle}>Lesson Withdrawals</h4>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              If you wish to discontinue lessons, a one-month written notice via
+              email is required.
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              No refunds or credits will be given for unused lessons
+            </ListItem>
+            <h4 className={classes.subTitle}>Safety</h4>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Students must be escorted by an adult to and from the building;
+              children cannot be left unattended.
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Parents/Guardians may sign a waiver allowing students 12 years and
+              older to enter and exit the premises unescorted.
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              West Hillhurst Piano and Violin is a nut-free environment.
+            </ListItem>
+            <h4 className={classes.subTitle}>Government Mandated Closures</h4>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              In the event of a government-mandated closure, all in-person
+              lessons will continue online. Refunds and make-up lessons will not
+              be available for students who refuse scheduled online lessons due
+              to closure. Students may withdraw with one month’s written notice
+              via email.
+            </ListItem>
+            <h4 className={classes.subTitle}>Liability</h4>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              West Hillhurst Piano and Violin, along with the building owners,
+              managers, their directors, officers, employees, agents,
+              volunteers, contractors, and representatives, are not liable for
+              damages, injuries, illnesses, or claims related to participation
+              in music lessons, classes, performances, or entering and leaving
+              the premises or facilities.
+            </ListItem>
+            <h4 className={classes.subTitle}>Acts of God</h4>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              West Hillhurst Piano and Violin shall not be liable for failure to
+              deliver services due to circumstances beyond its control,
+              including Acts of God (such as flood, storm, pandemic, or other
+              natural disasters), acts or regulations of public authorities, and
+              political or social upheavals.
+            </ListItem>
             <h4 className={classes.subTitle}>Suspension of Student</h4>
-            <div className={classes.left}>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
               Mrs. Lym reserves the right to suspend a student for non-payment
               of tuition fee or inappropriate conduct.
-            </div>
-            ​<h4 className={classes.subTitle}>Payment</h4>
-            <div className={classes.left}>
-              One month tuition fee(4 or 5 weeks) is due on the first lesson day
-              for each month. ​
-            </div>
+            </ListItem>
+            <h4 className={classes.subTitle}>Policy Changes</h4>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              West Hillhurst Piano and Violin policies are subject to change
+              during the school year. Notice of changes will be provided to
+              students through emails.
+            </ListItem>
           </div>
         </div>
       </div>

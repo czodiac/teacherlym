@@ -50,7 +50,16 @@ const profilePageStyle = {
     margin: "20px auto 50px auto",
     textAlign: "center",
   },
+  subListItem: {
+    padding: "0 0 10px 45px",
+  },
   chkIcon: {
+    margin: "0 10px 0 0",
+    color: "#448946",
+    verticalAlign: "bottom",
+  },
+  chkIconSub: {
+    padding: "0 0 0 0px",
     margin: "0 10px 0 0",
     color: "#448946",
     verticalAlign: "bottom",
@@ -80,6 +89,19 @@ const profilePageStyle = {
     margin: "15px 0 0 0",
     padding: "10px 10px 0px 10px",
     textAlign: "left",
+  },
+  redBold: {
+    color: "#d24b4b",
+    fontWeight: "600",
+  },
+  marginTop: {
+    marginTop: "10px",
+  },
+  videoExpl: {
+    color: "#747474",
+    fontSize: "14px",
+    marginBottom: "5px",
+    fontWeight: "600",
   },
 };
 

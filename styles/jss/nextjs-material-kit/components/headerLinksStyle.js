@@ -3,6 +3,27 @@ import { defaultFont } from "/styles/jss/nextjs-material-kit.js";
 import tooltip from "/styles/jss/nextjs-material-kit/tooltipsStyle.js";
 
 const headerLinksStyle = (theme) => ({
+  topBanner: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100%",
+    textAlign: "center",
+    padding: "5px 0", // Adjust padding as needed
+    backgroundColor: "#663011", // Example background color
+    zIndex: 1000, // Ensure it's above other elements
+  },
+  whiteLink: {
+    color: "#f0e8e1",
+    fontWeight: "400",
+    textDecoration: "none", // Ensure no underline by default
+    "&:hover": {
+      color: "#ccb39d", // Maintain white color on hover or focus
+    },
+    "&:focus": {
+      color: "#f0e8e1", // Maintain white color on hover or focus
+    },
+  },
   list: {
     ...defaultFont,
     fontSize: "14px",

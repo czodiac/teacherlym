@@ -3,11 +3,6 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// @material-ui/icons
-import Check from "@material-ui/icons/Check";
-import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
-// core components
-import YouTube from "react-youtube";
 import Header from "/components/Header/Header.js";
 import Footer from "/components/Footer/Footer.js";
 import GridContainer from "/components/Grid/GridContainer.js";
@@ -22,14 +17,6 @@ const useStyles = makeStyles(styles);
 export default function HomePage(props) {
   const classes = useStyles();
   const { ...rest } = props;
-  const opts = {
-    playerVars: {
-      autoplay: 0,
-    },
-  };
-  function onShowOriginal() {
-    window.open("/img/mainPage_Original.png", "_blank");
-  }
   return (
     <div>
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
