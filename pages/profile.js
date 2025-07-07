@@ -58,6 +58,32 @@ export default function ProfilePage(props) {
               and Canada.
             </div>
             <div className={classes.subItem}>
+              She is RCM Certified (Level 8) and has completed advanced
+              pedagogical training through Canada Music Pedagogy, specializing
+              in music theory, performance technique, and RCM exam coaching.
+              This equips her with a deep understanding of the Canadian
+              curriculum and exam requirements.
+            </div>
+            <div className={classes.subItem}>
+              Heather holds a Bachelor of Piano Performance from Dankook
+              University, a Master’s Degree in Art and Culture Business
+              Administration from Hanyang University—one of South Korea’s
+              top-ranking institutions, widely respected for its leadership in
+              arts and education—and a Professional Lecturer License in Music
+              Education from Seoul National University, South Korea’s most
+              prestigious university (2018).
+            </div>
+            <div className={classes.subItem}>
+              She currently teaches at Musicworks Canada (Edgemont & Beddington)
+              and at Chinook School of Music, one of Calgary’s largest and most
+              respected music schools. Heather offers personalized curricula for
+              students aged 4 to adult, focusing on foundational technique,
+              advanced performance, and music theory. Her warm, focused, and
+              detail-oriented teaching style fosters a positive environment that
+              balances discipline and creativity, helping students find joy and
+              beauty in music.
+            </div>
+            <div className={classes.subItem}>
               Before moving to Canada, Heather worked at Samsung Display, a
               global technology leader known for its selective hiring and
               high-performance culture. There, she developed strong
@@ -76,55 +102,24 @@ export default function ProfilePage(props) {
               teaching.
             </div>
             <div className={classes.subItem}>
+              Heather also performs actively at community events, including
+              piano trios, violin-piano duets, and solo recitals.
+            </div>
+            <div className={classes.subItem}>
               Beyond her professional work, she shares her love of music through
               volunteer performances at the Calgary Public Library, university
               hospitals, homeless shelters, and nursing homes—bringing music’s
               healing power to people at venues across Calgary.
             </div>
-            <div className={classes.subItem}>Pianist Mrs. Heather: ​​</div>
             <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} /> is RCM
-              Certified (Level 8) and has completed advanced pedagogical
-              training through Canada Music Pedagogy, specializing in music
-              theory, performance technique, and RCM exam coaching. This equips
-              her with a deep understanding of the Canadian curriculum and exam
-              requirements.
-            </div>
-            <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} /> holds a
-              Bachelor of Piano Performance from Dankook University, a Master’s
-              Degree in Art and Culture Business Administration from Hanyang
-              University—one of South Korea’s top-ranking institutions, widely
-              respected for its leadership in arts and education—and a
-              Professional Lecturer License in Music Education from Seoul
-              National University, South Korea’s most prestigious university
-              (2018).
-            </div>
-            <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              currently teaches at Musicworks Canada (Edgemont & Beddington) and
-              at Chinook School of Music, one of Calgary’s largest and most
-              respected music schools. Heather offers personalized curricula for
-              students aged 4 to adult, focusing on foundational technique,
-              advanced performance, and music theory. Her warm, focused, and
-              detail-oriented teaching style fosters a positive environment that
-              balances discipline and creativity, helping students find joy and
-              beauty in music.
-            </div>
-            <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              performs actively at community events, including piano trios,
-              violin-piano duets, and solo recitals.
-            </div>
-            <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              has no criminal record (
+              Mrs. Heather has no criminal record. (
               <a href="./HeatherPoliceRecord2025Jan.pdf" target="_blank">
                 Jan 2025 document
               </a>
               )
             </div>
           </div>
+          <br />
           <br />
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
@@ -143,72 +138,35 @@ export default function ProfilePage(props) {
           </GridContainer>
           <div className={classes.description}>
             <div className={classes.subItem}>
-              Lym's teaching method combines&nbsp;
-              <a
-                href="https://en.wikipedia.org/wiki/Suzuki_method"
-                target="_blank"
-              >
-                Suzuki
-              </a>
-              &nbsp;and Shinozaki method. Suzuki emphasizes learning music
-              through ears whereas Shinozaki emphasizes more on theories and
-              academic approaches.
+              Mrs. Lym is a skilled violinist and pianist whose teaching method
+              uniquely combines the Suzuki and Shinozaki approaches. The Suzuki
+              method emphasizes learning music by ear and listening, while the
+              Shinozaki method focuses more on music theory and academic study.
             </div>
             <div className={classes.subItem}>
-              Violinist & Pianist Mrs. Lym: ​​
+              Mrs. Lym holds a bachelor’s degree in violin performance with a
+              piano minor and has pursued advanced studies at the Royal
+              Conservatory of Music in Toronto and California State University,
+              San Bernardino.
             </div>
             <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              is a pupil of Michael Barta(Winner of&nbsp;
-              <a
-                href="https://en.wikipedia.org/wiki/International_Tchaikovsky_Competition"
-                target="_blank"
-              >
-                Tchaikovsky International Competition
-              </a>
-              , Pupil of Legendary Violinist{" "}
-              <a
-                href="https://en.wikipedia.org/wiki/Arthur_Grumiaux"
-                target="_blank"
-              >
-                Arthur Grumiaux
-              </a>
-              )
+              Throughout her career, she served as the first violinist for the
+              York Symphony Orchestra and the Mississauga Symphony Orchestra in
+              Ontario, as well as for orchestras in Korea. She is a certified
+              Suzuki teacher, having completed her training and Suzuki pedagogy
+              studies at the Royal Conservatory of Music in Toronto.
             </div>
             <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              was 1st violinist at York symphony orchestra, Mississauga symphony
-              orchestra in Ontario and symphonies in Korea
+              Mrs. Lym is a proud member of the Suzuki Association of the
+              Americas and the American Federation of Musicians. She is also a
+              certified teacher of the Royal Conservatory of Music, qualified to
+              prepare students for RCM examinations. She uses both the RCM
+              curriculum and the Alfred Method for her students. Additionally,
+              she holds a clean criminal record, verified by a document dated
+              September 2015.
             </div>
             <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              is a certified Suzuki teacher trained at Royal Conservatory of
-              Music.
-            </div>
-            <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              studied Suzuki pedagogy at Royal Conservatory of Music in Toronto
-            </div>
-            <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              is a member of{" "}
-              <a href="https://suzukiassociation.org/" target="_blank">
-                Suzuki Association of the Americas
-              </a>
-              (Member #: 115618) and AFM (American Federation of Musicians)
-            </div>
-            <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              is a certified member of &nbsp;
-              <a href="http://www.rcmusic.ca/" target="_blank">
-                Royal Conservatory of Music
-              </a>
-              (RCM Teacher #: 108136) so she can help her student prepare for
-              RCM Exams
-            </div>
-            <div className={classes.subItem}>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
-              has no criminal record (
+              Mrs.Lym has no criminal record. (
               <a href="./img/criminal_record.jpg" target="_blank">
                 Sept 2015 document
               </a>
