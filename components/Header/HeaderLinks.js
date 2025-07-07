@@ -65,7 +65,7 @@ export default function HeaderLinks(props) {
             }`}
             color="transparent"
           >
-            Profile
+            Teachers
           </Button>
         </Link>
         <Link href="/policy" passHref>
