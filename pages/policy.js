@@ -48,39 +48,39 @@ export default function PolicyPage(props) {
               Rates are based on the number of weeks in each month.
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                30 minute session: $40 per session
+                30 minute session: $42 per session
               </ListItem>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $160 per month (for 4 weeks)
+                $168 per month (for 4 weeks)
               </div>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $200 per month (for 5 weeks)
+                $210 per month (for 5 weeks)
               </div>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                40 minute session: $55 per session
+                45 minute session: $60 per session
               </ListItem>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $220 per month (for 4 weeks)
+                $240 per month (for 4 weeks)
               </div>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $275 per month (for 5 weeks)
+                $300 per month (for 5 weeks)
               </div>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />1 hour
-                session: $70 per session
+                session: $80 per session
               </ListItem>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $280 per month (for 4 weeks)
+                $320 per month (for 4 weeks)
               </div>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $350 per month (for 5 weeks)
+                $400 per month (for 5 weeks)
               </div>
               <div className={classes.marginTop}>
                 * For July and August, no monthly payment is required. You can

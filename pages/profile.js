@@ -32,8 +32,7 @@ export default function ProfilePage(props) {
   return (
     <div>
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
-      <Parallax filter image="/img/bg8.jpg" />
-      <div className={classNames(classes.main, classes.mainRaised)}>
+      <div className={classNames(classes.main, classes.mainNoParallax)}>
         <div className={classes.container}>
           <br />
           <GridContainer justify="center">
@@ -125,9 +124,13 @@ export default function ProfilePage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <img
                 alt="West Hillhurst Violin and Piano"
-                src="./img/LymLee.jpg"
-                height="300px"
-                style={{ display: "block", margin: "0 auto" }}
+                src="./img/Lym.jpg"
+                style={{
+                  display: "block",
+                  maxWidth: "100%",
+                  height: "auto",
+                  margin: "0 auto",
+                }}
               />
               <div className={classes.profile}>
                 <div className={classes.name}>
@@ -138,39 +141,84 @@ export default function ProfilePage(props) {
           </GridContainer>
           <div className={classes.description}>
             <div className={classes.subItem}>
-              Mrs. Lym is a skilled violinist and pianist whose teaching method
-              uniquely combines the Suzuki and Shinozaki approaches. The Suzuki
-              method emphasizes learning music by ear and listening, while the
+              Lym Kim is a skilled violinist and pianist whose teaching method
+              uniquely combines the Suzuki and Shinozaki approaches. While the
+              Suzuki method emphasizes learning music by ear and listening, the
               Shinozaki method focuses more on music theory and academic study.
+              She also incorporates both RCM and Alfred’s method materials,
+              depending on each student’s needs.
             </div>
             <div className={classes.subItem}>
-              Mrs. Lym holds a bachelor’s degree in violin performance with a
-              piano minor and has pursued advanced studies at the Royal
-              Conservatory of Music in Toronto and California State University,
-              San Bernardino.
+              Known for her kind, caring, and empathetic teaching style, Mrs.
+              Lym creates a warm and supportive environment where her students
+              feel encouraged to explore their creativity without fear of
+              judgment or shame. She adopts a teaching style that avoids
+              dictating instructions and instead promotes active participation
+              by asking questions such as, “Do you wanna try this?”, “What do
+              you think about this?”, and “How can you make this better?” This
+              approach nurtures her students’ artistic independence and
+              creativity.
             </div>
             <div className={classes.subItem}>
-              Throughout her career, she served as the first violinist for the
-              York Symphony Orchestra and the Mississauga Symphony Orchestra in
-              Ontario, as well as for orchestras in Korea. She is a certified
-              Suzuki teacher, having completed her training and Suzuki pedagogy
-              studies at the Royal Conservatory of Music in Toronto.
+              Her teaching philosophy is inspired by the legendary Juilliard
+              violin professor Dorothy DeLay, renowned for mentoring world-class
+              musicians through thoughtful questioning rather than direct
+              commands.
             </div>
             <div className={classes.subItem}>
-              Mrs. Lym is a proud member of the Suzuki Association of the
-              Americas and the American Federation of Musicians. She is also a
-              certified teacher of the Royal Conservatory of Music, qualified to
-              prepare students for RCM examinations. She uses both the RCM
-              curriculum and the Alfred Method for her students. Additionally,
-              she holds a clean criminal record, verified by a document dated
-              September 2015.
-            </div>
-            <div className={classes.subItem}>
-              Mrs.Lym has no criminal record. (
-              <a href="./img/criminal_record.jpg" target="_blank">
-                Sept 2015 document
+              She holds a bachelor’s degree in violin performance with a piano
+              minor and has pursued advanced studies at the Royal Conservatory
+              of Music in Toronto and California State University, San
+              Bernardino. She was a pupil of Michael Barta, 2nd prize winner at
+              the 1973 Joseph Szigeti International Violin Competition, finalist
+              at the 1974 Tchaikovsky International Violin Competition, and a
+              student of the legendary violinist{" "}
+              <a
+                href="https://en.wikipedia.org/wiki/Arthur_Grumiaux"
+                target="_blank"
+              >
+                Arthur Grumiaux
               </a>
-              )
+              , whose Mozart concerto recordings are considered iconic. Under
+              Mr. Barta’s mentorship, Mrs. Lym studied Mozart’s Violin Concertos
+              extensively and in depth.
+            </div>
+            <div className={classes.subItem}>
+              At just age ten, upon her teacher’s recommendation, she became the
+              youngest member of the Southern Illinois University Orchestra,
+              performing among college-level musicians.
+            </div>
+            <div className={classes.subItem}>
+              She also received daily private lessons from a Russian master
+              violinist, a former concertmaster of the Novosibirsk Philharmonic
+              Orchestra, and a direct student of Zakhar Bron—the legendary
+              mentor of Maxim Vengerov and Vadim Repin. This immersive
+              mentorship helped her absorb the bowing , phrasing techniques of
+              the Russian violin school.
+            </div>
+            <div className={classes.subItem}>
+              In 2009, she was invited to perform at the Seoul Spring Chamber
+              Music Festival, a prestigious gathering of top-tier international
+              musicians. From 2014 to 2015, she served as a music teacher at
+              Busan Foreign School an international school in South Korea.
+            </div>
+            <div className={classes.subItem}>
+              Throughout her career, she served as 1st violinist with the York
+              Symphony Orchestra and the Mississauga Symphony Orchestra in
+              Ontario, as well as various orchestras in S.Korea. She has
+              performed extensively in piano trios and other chamber ensembles
+              for weddings and professional events across Toronto and
+              Mississauga, collaborating with local professional musicians.
+            </div>
+            <div className={classes.subItem}>
+              Mrs. Lym is a certified Suzuki teacher, having completed Suzuki
+              pedagogy training at the Royal Conservatory of Music in Toronto.
+              She is a proud member of the Suzuki Association of the Americas
+              (Member #: 115618), the American Federation of Musicians (AFM),
+              and a certified teacher of the Royal Conservatory of Music (RCM
+              Teacher #: 108136), fully qualified to prepare students for RCM
+              examinations. She also holds a clean criminal record (verified
+              2015).
             </div>
           </div>
         </div>
