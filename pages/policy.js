@@ -60,15 +60,15 @@ export default function PolicyPage(props) {
               </div>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                45 minute session: $60 per session
+                45 minute session: $62 per session
               </ListItem>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $240 per month (for 4 weeks)
+                $248 per month (for 4 weeks)
               </div>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $300 per month (for 5 weeks)
+                $310 per month (for 5 weeks)
               </div>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />1 hour
