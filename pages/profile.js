@@ -1,16 +1,13 @@
-import React from "react";
 // nodejs divbrary that concatenates classes
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 // core components
 import Header from "/components/Header/Header.js";
 import Footer from "/components/Footer/Footer.js";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import HeaderLinks from "/components/Header/HeaderLinks.js";
-import Parallax from "/components/Parallax/Parallax.js";
 
 import styles from "/styles/jss/nextjs-material-kit/pages/profilePage.js";
 
@@ -37,106 +34,100 @@ export default function ProfilePage(props) {
           <br />
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
-              <img
-                alt="West Hillhurst Violin and Piano"
-                src="./img/Heather.jpeg"
-                height="500px"
-                style={{ display: "block", margin: "0 auto" }}
-              />
               <div className={classes.profile}>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>Heather Hyunsuk Lee</h3>
+                  <h3 className={classes.title}>
+                    Alex Paisit Tangkitsiri – Piano
+                  </h3>
+                  <h4 className={classes.titleSub}>
+                    RCM Registered Teacher | Yamaha Certified Instructor
+                  </h4>
                 </div>
               </div>
+              <img
+                alt="Alex - West Hillhurst Violin and Piano"
+                src="./img/Alex.jpg"
+                height="500px"
+                className={classes.teacherPhoto}
+              />
             </GridItem>
           </GridContainer>
           <div className={classes.description}>
             <div className={classes.subItem}>
-              Heather Hyunsuk Lee is a passionate piano instructor with over 15
-              years of teaching and performance experience in both South Korea
-              and Canada.
+              Alex Tangkitsiri is a highly experienced and dedicated piano
+              educator with many years of teaching experience working with
+              students of all ages, from young beginners to adult learners. He
+              is widely respected by colleagues and former students for his
+              caring, patient, and genuinely kind teaching approach.
             </div>
             <div className={classes.subItem}>
-              She is RCM Certified (Level 8) and has completed advanced
-              pedagogical training through Canada Music Pedagogy, specializing
-              in music theory, performance technique, and RCM exam coaching.
-              This equips her with a deep understanding of the Canadian
-              curriculum and exam requirements.
+              Alex is a Registered Teacher with{" "}
+              <strong>The Royal Conservatory of Music</strong>.{" "}
+              <strong>
+                <a
+                  href="https://www.rcmusic.com/teachers/a/alex-tangkitsiri"
+                  target="_blank"
+                >
+                  Click here to view his official RCM teacher profile and read
+                  more about his teaching philosophy.
+                </a>
+              </strong>{" "}
+              His teaching follows the structured curriculum of the RCM system,
+              helping students build strong foundations in technique, theory,
+              and musical expression.
             </div>
             <div className={classes.subItem}>
-              Heather holds a Bachelor of Piano Performance from Dankook
-              University, a Master’s Degree in Art and Culture Business
-              Administration from Hanyang University—one of South Korea’s
-              top-ranking institutions, widely respected for its leadership in
-              arts and education—and a Professional Lecturer License in Music
-              Education from Seoul National University, South Korea’s most
-              prestigious university (2018).
+              Alex also completed professional training with{" "}
+              <strong>Yamaha Music School</strong> in Toronto and is a{" "}
+              <strong>certified Yamaha Junior Music Course instructor</strong>.
+              He successfully passed the Yamaha Teacher Candidates Examination
+              (TCE), which includes advanced testing in music theory, dictation,
+              composition, and piano performance at a minimum{" "}
+              <strong>RCM Grade 12 level</strong>. During his time with Yamaha,
+              he taught both{" "}
+              <strong>group classes for young children (ages 4–6)</strong> and{" "}
+              <strong>private piano lessons for students of all levels</strong>.
             </div>
             <div className={classes.subItem}>
-              She currently teaches at Musicworks Canada (Edgemont & Beddington)
-              and at Chinook School of Music, one of Calgary’s largest and most
-              respected music schools. Heather offers personalized curricula for
-              students aged 4 to adult, focusing on foundational technique,
-              advanced performance, and music theory. Her warm, focused, and
-              detail-oriented teaching style fosters a positive environment that
-              balances discipline and creativity, helping students find joy and
-              beauty in music.
+              Throughout his career, Alex has participated in numerous music
+              seminars and teacher training programs and has taught in several
+              music schools across Canada. His teaching experience includes
+              preparing students for{" "}
+              <strong>
+                RCM examinations, recitals, and performance festivals
+              </strong>
+              , helping them develop both technical excellence and confidence in
+              performance.
             </div>
             <div className={classes.subItem}>
-              Before moving to Canada, Heather worked at Samsung Display, a
-              global technology leader known for its selective hiring and
-              high-performance culture. There, she developed strong
-              organizational and leadership skills through managing educational
-              programs and supporting employees with counseling—qualities she
-              brings into her nurturing and structured teaching approach.
-            </div>
-            <div className={classes.subItem}>
-              Her musical foundation is rooted in South Korea’s renowned
-              classical training system, which is internationally respected for
-              its high standards, rigorous competition, and consistent global
-              success. Students in this system undergo years of disciplined
-              technical development, frequent performance evaluations, and
-              international-level examination standards—foundations that have
-              shaped Heather’s structured and high-standard approach to
-              teaching.
-            </div>
-            <div className={classes.subItem}>
-              Heather also performs actively at community events, including
-              piano trios, violin-piano duets, and solo recitals.
-            </div>
-            <div className={classes.subItem}>
-              Beyond her professional work, she shares her love of music through
-              volunteer performances at the Calgary Public Library, university
-              hospitals, homeless shelters, and nursing homes—bringing music’s
-              healing power to people at venues across Calgary.
-            </div>
-            <div className={classes.subItem}>
-              Mrs. Heather has no criminal record. (
-              <a href="./HeatherPoliceRecord2025Jan.pdf" target="_blank">
-                Jan 2025 document
-              </a>
-              )
+              For the absolute peace of mind of our families, Alex has
+              successfully completed the{" "}
+              <strong>
+                <a href="./AlexPolicRecord2026.pdf" target="_blank">
+                  Recent Police Information Check with Vulnerable Sector Search
+                  (VSC)
+                </a>
+              </strong>{" "}
+              through the Calgary Police Service. This is the most comprehensive
+              and stringent background screening required for professionals
+              working closely with children.
             </div>
           </div>
           <br />
           <br />
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
-              <img
-                alt="West Hillhurst Violin and Piano"
-                src="./img/Lym.jpg"
-                style={{
-                  display: "block",
-                  maxWidth: "100%",
-                  height: "auto",
-                  margin: "0 auto",
-                }}
-              />
               <div className={classes.profile}>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>Lym Kim</h3>
+                  <h3 className={classes.title}>Lym Kim - Piano & Violin</h3>
+                  <h4 className={classes.titleSub}>RCM Registered Teacher</h4>
                 </div>
               </div>
+              <img
+                alt="Lym - West Hillhurst Violin and Piano"
+                src="./img/Lym.jpg"
+                className={classes.teacherPhotoResponsive}
+              />
             </GridItem>
           </GridContainer>
           <div className={classes.description}>
@@ -145,8 +136,8 @@ export default function ProfilePage(props) {
               uniquely combines the Suzuki and Shinozaki approaches. While the
               Suzuki method emphasizes learning music by ear and listening, the
               Shinozaki method focuses more on music theory and academic study.
-              She also incorporates both RCM and Alfred’s method materials,
-              depending on each student’s needs.
+              She also incorporates both RCM and Alfred's method materials,
+              depending on each student's needs.
             </div>
             <div className={classes.subItem}>
               Known for her kind, caring, and empathetic teaching style, Mrs.
@@ -154,9 +145,9 @@ export default function ProfilePage(props) {
               feel encouraged to explore their creativity without fear of
               judgment or shame. She adopts a teaching style that avoids
               dictating instructions and instead promotes active participation
-              by asking questions such as, “Do you wanna try this?”, “What do
-              you think about this?”, and “How can you make this better?” This
-              approach nurtures her students’ artistic independence and
+              by asking questions such as, "Do you wanna try this?", "What do
+              you think about this?", and "How can you make this better?" This
+              approach nurtures her students' artistic independence and
               creativity.
             </div>
             <div className={classes.subItem}>
@@ -166,7 +157,7 @@ export default function ProfilePage(props) {
               commands.
             </div>
             <div className={classes.subItem}>
-              She holds a bachelor’s degree in violin performance with a piano
+              She holds a bachelor's degree in violin performance with a piano
               minor and has pursued advanced studies at the Royal Conservatory
               of Music in Toronto and California State University, San
               Bernardino. She was a pupil of Michael Barta, 2nd prize winner at
@@ -180,11 +171,11 @@ export default function ProfilePage(props) {
                 Arthur Grumiaux
               </a>
               , whose Mozart concerto recordings are considered iconic. Under
-              Mr. Barta’s mentorship, Mrs. Lym studied Mozart’s Violin Concertos
+              Mr. Barta's mentorship, Mrs. Lym studied Mozart's Violin Concertos
               extensively and in depth.
             </div>
             <div className={classes.subItem}>
-              At just age ten, upon her teacher’s recommendation, she became the
+              At just age ten, upon her teacher's recommendation, she became the
               youngest member of the Southern Illinois University Orchestra,
               performing among college-level musicians.
             </div>
@@ -217,8 +208,7 @@ export default function ProfilePage(props) {
               (Member #: 115618), the American Federation of Musicians (AFM),
               and a certified teacher of the Royal Conservatory of Music (RCM
               Teacher #: 108136), fully qualified to prepare students for RCM
-              examinations. She also holds a clean criminal record (verified
-              2015).
+              examinations. She also holds a clean criminal record.
             </div>
           </div>
         </div>

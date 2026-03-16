@@ -42,10 +42,17 @@ const profilePageStyle = {
   },
   title: {
     ...title,
-    display: "inline-block",
+    display: "block",
     position: "relative",
-    marginTop: "30px",
-    minHeight: "32px",
+    margin: "0",
+    textDecoration: "none",
+  },
+  titleSub: {
+    ...title,
+    display: "block",
+    position: "relative",
+    margin: "0 0 10px 0",
+    fontSize: "90%",
     textDecoration: "none",
   },
   subTitle: {
@@ -108,6 +115,21 @@ const profilePageStyle = {
     fontSize: "14px",
     marginBottom: "5px",
     fontWeight: "600",
+  },
+  // Teacher photo style
+  teacherPhoto: {
+    display: "block",
+    margin: "0 auto",
+    borderRadius: "16px",
+    boxShadow: "0 8px 32px 0 rgba(0,0,0,0.18), 0 2px 12px 0 rgba(0,0,0,0.10)",
+  },
+  teacherPhotoResponsive: {
+    display: "block",
+    margin: "0 auto",
+    maxWidth: "100%",
+    height: "auto",
+    borderRadius: "16px",
+    boxShadow: "0 8px 32px 0 rgba(0,0,0,0.18), 0 2px 12px 0 rgba(0,0,0,0.10)",
   },
 };
 
