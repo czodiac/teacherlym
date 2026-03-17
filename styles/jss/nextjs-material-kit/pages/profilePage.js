@@ -116,13 +116,14 @@ const profilePageStyle = {
     marginBottom: "5px",
     fontWeight: "600",
   },
-  // Teacher photo style
+  // Single teacher photo
   teacherPhoto: {
     display: "block",
     margin: "0 auto",
     borderRadius: "16px",
     boxShadow: "0 8px 32px 0 rgba(0,0,0,0.18), 0 2px 12px 0 rgba(0,0,0,0.10)",
   },
+  // Responsive single teacher photo
   teacherPhotoResponsive: {
     display: "block",
     margin: "0 auto",
@@ -130,6 +131,35 @@ const profilePageStyle = {
     height: "auto",
     borderRadius: "16px",
     boxShadow: "0 8px 32px 0 rgba(0,0,0,0.18), 0 2px 12px 0 rgba(0,0,0,0.10)",
+  },
+  // Row container for side-by-side photos
+  photoRow: {
+    display: "flex",
+    flexDirection: "row",
+    gap: "16px",
+    justifyContent: "center",
+    alignItems: "stretch", // flex-start → stretch 로 변경
+    width: "100%",
+    "@media (max-width: 600px)": {
+      flexDirection: "column", // 작은 화면에서 세로로
+      alignItems: "center",
+    },
+  },
+  // Each photo inside a row
+  photoRowItem: {
+    flex: "1 1 0",
+    width: "calc(50% + 100px)", // 50px 추가
+    maxWidth: "calc(50% + 100px)", // 50px 추가
+    height: "400px", // 고정 높이 추가
+    objectFit: "cover", // 비율 유지하며 잘라서 채움
+    borderRadius: "16px",
+    boxShadow: "0 8px 32px 0 rgba(0,0,0,0.18), 0 2px 12px 0 rgba(0,0,0,0.10)",
+    display: "block",
+    "@media (max-width: 600px)": {
+      width: "100%", // 작은 화면에서 전체 너비
+      maxWidth: "100%",
+      height: "300px", // 모바일 높이
+    },
   },
 };
 

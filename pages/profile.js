@@ -3,13 +3,13 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import Header from "/components/Header/Header.js";
-import Footer from "/components/Footer/Footer.js";
-import GridContainer from "/components/Grid/GridContainer.js";
-import GridItem from "/components/Grid/GridItem.js";
-import HeaderLinks from "/components/Header/HeaderLinks.js";
+import Header from "../components/Header/Header.js"; // ✅ 상대경로
+import Footer from "../components/Footer/Footer.js";
+import GridContainer from "../components/Grid/GridContainer.js";
+import GridItem from "../components/Grid/GridItem.js";
+import HeaderLinks from "../components/Header/HeaderLinks.js";
 
-import styles from "/styles/jss/nextjs-material-kit/pages/profilePage.js";
+import styles from "../styles/jss/nextjs-material-kit/pages/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
@@ -123,11 +123,18 @@ export default function ProfilePage(props) {
                   <h4 className={classes.titleSub}>RCM Registered Teacher</h4>
                 </div>
               </div>
-              <img
-                alt="Lym - West Hillhurst Violin and Piano"
-                src="./img/Lym.jpg"
-                className={classes.teacherPhotoResponsive}
-              />
+              <div className={classes.photoRow}>
+                <img
+                  alt="Lym - West Hillhurst Violin and Piano"
+                  src="./img/Lym.jpg"
+                  className={classes.photoRowItem}
+                />
+                <img
+                  alt="Lym 2 - West Hillhurst Violin and Piano"
+                  src="./img/LymLee.jpg"
+                  className={classes.photoRowItem}
+                />
+              </div>
             </GridItem>
           </GridContainer>
           <div className={classes.description}>
