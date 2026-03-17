@@ -36,7 +36,7 @@ export default function ProfilePage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>
+                  <h3 className={classes.title} style={{ margin: "0" }}>
                     Alex Paisit Tangkitsiri – Piano
                   </h3>
                   <h4 className={classes.titleSub}>
@@ -119,7 +119,9 @@ export default function ProfilePage(props) {
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>Lym Kim - Piano & Violin</h3>
+                  <h3 className={classes.title} style={{ margin: "0" }}>
+                    Lym Kim - Piano & Violin
+                  </h3>
                   <h4 className={classes.titleSub}>RCM Registered Teacher</h4>
                 </div>
               </div>

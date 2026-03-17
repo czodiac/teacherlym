@@ -32,7 +32,9 @@ export default function VideoPage(props) {
         className={classNames(classes.main, classes.mainRaised, classes.center)}
       >
         <div className={classes.container}>
-          <h3 className={classes.title}>Lym's Video</h3>
+          <h3 className={classes.title} style={{ padding: "20px 0 0 0" }}>
+            Lym's Video
+          </h3>
           <div className={classes.videoExpl}>
             Lym can be seen at 1:59 & 2:43 when viewed in full screen.
           </div>

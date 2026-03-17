@@ -28,7 +28,7 @@ export default function HomePage(props) {
               <div className={classes.profile}>
                 <div className={classes.name}>
                   <h3 className={classes.title}>
-                    Welcome to West Hillhurst Piano and Violin
+                    West Hillhurst Piano and Violin
                   </h3>
                 </div>
               </div>

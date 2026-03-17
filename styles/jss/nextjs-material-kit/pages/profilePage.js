@@ -44,7 +44,7 @@ const profilePageStyle = {
     ...title,
     display: "block",
     position: "relative",
-    margin: "0",
+    margin: "20px 0 0 0",
     textDecoration: "none",
   },
   titleSub: {
@@ -57,6 +57,7 @@ const profilePageStyle = {
   },
   subTitle: {
     ...title,
+    margin: "10px 0 0 0",
     textAlign: "left",
   },
   navWrapper: {
