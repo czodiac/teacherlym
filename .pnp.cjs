@@ -29,6 +29,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@material-ui/core", "virtual:a8ea111fc68c599e213ccd2f65ff0379fef485f8690e3a153b633e23f74657bf7a0890cee6fcc215375f5daee333ead3c4ef5b1d9fd4ee81bf91509475638b53#npm:4.11.4"],\
           ["@material-ui/icons", "virtual:a8ea111fc68c599e213ccd2f65ff0379fef485f8690e3a153b633e23f74657bf7a0890cee6fcc215375f5daee333ead3c4ef5b1d9fd4ee81bf91509475638b53#npm:4.11.2"],\
+          ["@material-ui/styles", "virtual:a8ea111fc68c599e213ccd2f65ff0379fef485f8690e3a153b633e23f74657bf7a0890cee6fcc215375f5daee333ead3c4ef5b1d9fd4ee81bf91509475638b53#npm:4.11.5"],\
           ["classnames", "npm:2.3.1"],\
           ["moment", "npm:2.29.4"],\
           ["next", "virtual:a8ea111fc68c599e213ccd2f65ff0379fef485f8690e3a153b633e23f74657bf7a0890cee6fcc215375f5daee333ead3c4ef5b1d9fd4ee81bf91509475638b53#npm:12.2.5"],\
@@ -340,7 +341,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@material-ui/core", "virtual:a8ea111fc68c599e213ccd2f65ff0379fef485f8690e3a153b633e23f74657bf7a0890cee6fcc215375f5daee333ead3c4ef5b1d9fd4ee81bf91509475638b53#npm:4.11.4"],\
           ["@babel/runtime", "npm:7.29.2"],\
-          ["@material-ui/styles", "virtual:43fdbe9b7b0c1af3fbb9230fc548b6981292a4b9b081d18bb58f4b9c24c76b78a2081b6ab5990cde4d2e4bdfdfd24b46f757ea5a501f551b675f9165b2824613#npm:4.11.5"],\
+          ["@material-ui/styles", "virtual:a8ea111fc68c599e213ccd2f65ff0379fef485f8690e3a153b633e23f74657bf7a0890cee6fcc215375f5daee333ead3c4ef5b1d9fd4ee81bf91509475638b53#npm:4.11.5"],\
           ["@material-ui/system", "virtual:43fdbe9b7b0c1af3fbb9230fc548b6981292a4b9b081d18bb58f4b9c24c76b78a2081b6ab5990cde4d2e4bdfdfd24b46f757ea5a501f551b675f9165b2824613#npm:4.12.2"],\
           ["@material-ui/types", "virtual:43fdbe9b7b0c1af3fbb9230fc548b6981292a4b9b081d18bb58f4b9c24c76b78a2081b6ab5990cde4d2e4bdfdfd24b46f757ea5a501f551b675f9165b2824613#npm:5.1.0"],\
           ["@material-ui/utils", "virtual:43fdbe9b7b0c1af3fbb9230fc548b6981292a4b9b081d18bb58f4b9c24c76b78a2081b6ab5990cde4d2e4bdfdfd24b46f757ea5a501f551b675f9165b2824613#npm:4.11.3"],\
@@ -404,10 +405,10 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:43fdbe9b7b0c1af3fbb9230fc548b6981292a4b9b081d18bb58f4b9c24c76b78a2081b6ab5990cde4d2e4bdfdfd24b46f757ea5a501f551b675f9165b2824613#npm:4.11.5", {\
-        "packageLocation": "./.yarn/__virtual__/@material-ui-styles-virtual-49af789427/3/AppData/Local/Yarn/Berry/cache/@material-ui-styles-npm-4.11.5-1dede414b2-10c0.zip/node_modules/@material-ui/styles/",\
+      ["virtual:a8ea111fc68c599e213ccd2f65ff0379fef485f8690e3a153b633e23f74657bf7a0890cee6fcc215375f5daee333ead3c4ef5b1d9fd4ee81bf91509475638b53#npm:4.11.5", {\
+        "packageLocation": "./.yarn/__virtual__/@material-ui-styles-virtual-5c5764ee70/3/AppData/Local/Yarn/Berry/cache/@material-ui-styles-npm-4.11.5-1dede414b2-10c0.zip/node_modules/@material-ui/styles/",\
         "packageDependencies": [\
-          ["@material-ui/styles", "virtual:43fdbe9b7b0c1af3fbb9230fc548b6981292a4b9b081d18bb58f4b9c24c76b78a2081b6ab5990cde4d2e4bdfdfd24b46f757ea5a501f551b675f9165b2824613#npm:4.11.5"],\
+          ["@material-ui/styles", "virtual:a8ea111fc68c599e213ccd2f65ff0379fef485f8690e3a153b633e23f74657bf7a0890cee6fcc215375f5daee333ead3c4ef5b1d9fd4ee81bf91509475638b53#npm:4.11.5"],\
           ["@babel/runtime", "npm:7.29.2"],\
           ["@emotion/hash", "npm:0.8.0"],\
           ["@material-ui/types", "virtual:43fdbe9b7b0c1af3fbb9230fc548b6981292a4b9b081d18bb58f4b9c24c76b78a2081b6ab5990cde4d2e4bdfdfd24b46f757ea5a501f551b675f9165b2824613#npm:5.1.0"],\
@@ -2202,6 +2203,7 @@ const RAW_RUNTIME_STATE =
           ["next-material-kit", "workspace:."],\
           ["@material-ui/core", "virtual:a8ea111fc68c599e213ccd2f65ff0379fef485f8690e3a153b633e23f74657bf7a0890cee6fcc215375f5daee333ead3c4ef5b1d9fd4ee81bf91509475638b53#npm:4.11.4"],\
           ["@material-ui/icons", "virtual:a8ea111fc68c599e213ccd2f65ff0379fef485f8690e3a153b633e23f74657bf7a0890cee6fcc215375f5daee333ead3c4ef5b1d9fd4ee81bf91509475638b53#npm:4.11.2"],\
+          ["@material-ui/styles", "virtual:a8ea111fc68c599e213ccd2f65ff0379fef485f8690e3a153b633e23f74657bf7a0890cee6fcc215375f5daee333ead3c4ef5b1d9fd4ee81bf91509475638b53#npm:4.11.5"],\
           ["classnames", "npm:2.3.1"],\
           ["moment", "npm:2.29.4"],\
           ["next", "virtual:a8ea111fc68c599e213ccd2f65ff0379fef485f8690e3a153b633e23f74657bf7a0890cee6fcc215375f5daee333ead3c4ef5b1d9fd4ee81bf91509475638b53#npm:12.2.5"],\

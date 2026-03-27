@@ -282,7 +282,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@material-ui/styles@npm:^4.11.4":
+"@material-ui/styles@npm:^4.11.4, @material-ui/styles@npm:^4.11.5":
   version: 4.11.5
   resolution: "@material-ui/styles@npm:4.11.5"
   dependencies:
@@ -1709,6 +1709,7 @@ __metadata:
   dependencies:
     "@material-ui/core": "npm:4.11.4"
     "@material-ui/icons": "npm:4.11.2"
+    "@material-ui/styles": "npm:^4.11.5"
     classnames: "npm:2.3.1"
     moment: "npm:2.29.4"
     next: "npm:12.2.5"
