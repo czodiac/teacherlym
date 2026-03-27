@@ -128,6 +128,7 @@ const profilePageStyle = {
   teacherPhotoResponsive: {
     display: "block",
     margin: "0 auto",
+    width: "100%",
     maxWidth: "100%",
     height: "auto",
     borderRadius: "16px",

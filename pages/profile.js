@@ -3,7 +3,7 @@ import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
-import Header from "../components/Header/Header.js"; // ✅ 상대경로
+import Header from "../components/Header/Header.js";
 import Footer from "../components/Footer/Footer.js";
 import GridContainer from "../components/Grid/GridContainer.js";
 import GridItem from "../components/Grid/GridItem.js";
@@ -16,22 +16,87 @@ const useStyles = makeStyles(styles);
 export default function ProfilePage(props) {
   const classes = useStyles();
   const { ...rest } = props;
-  const opts = {
-    height: "563",
-    width: "1000",
-    playerVars: {
-      autoplay: 0,
-    },
-  };
+
   function onShowOriginal() {
     window.open("/img/mainPage_Original.png", "_blank");
   }
+
   return (
     <div>
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
       <div className={classNames(classes.main, classes.mainNoParallax)}>
         <div className={classes.container}>
           <br />
+
+          {/* ── Ellie (Ahhyun) Kim ── */}
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={6}>
+              <div className={classes.profile}>
+                <div className={classes.name}>
+                  <h3 className={classes.title} style={{ margin: "0" }}>
+                    Ellie (Ahhyun) Kim – Piano & Ukulele
+                  </h3>
+                  <h4 className={classes.titleSub}>
+                    RCM Certified | Yamaha Certified
+                  </h4>
+                </div>
+              </div>
+              <img
+                alt="Ellie (Ahhyun) Kim - West Hillhurst Violin and Piano"
+                src="/img/AhhyunKim.jpeg"
+                className={classes.teacherPhotoResponsive}
+              />
+            </GridItem>
+          </GridContainer>
+          <div className={classes.description}>
+            <div className={classes.subItem}>
+              Ellie is a warm and dedicated piano instructor who truly loves
+              teaching young children. She holds a{" "}
+              <strong>Bachelor of Piano Performance</strong> and is an
+              officially <strong>RCM Level 8 Certified Teacher</strong>.
+            </div>
+            <div className={classes.subItem}>
+              Ellie also teaches at <strong>Yamaha Music School</strong>, where
+              she applies Yamaha's proven teaching system to help students build
+              strong musical foundations, develop excellent technique, and
+              enhance their overall musicianship.
+            </div>
+            <div className={classes.subItem}>
+              She has experience teaching students of all ages and levels and is
+              known for creating engaging, personalized lessons that support
+              each student's unique learning style. Ellie places a strong
+              emphasis on both technical development and musical expression,
+              helping students grow with confidence and enjoyment.
+            </div>
+            <div className={classes.subItem}>
+              Ellie is especially recognized for her ability to connect with
+              young students, creating a warm and supportive environment where
+              they feel motivated, supported, and inspired to develop a lifelong
+              love of music.
+            </div>
+            <div className={classes.subItem}>
+              In addition to teaching, Ellie actively gives back to the Calgary
+              community as a <strong>volunteer pianist</strong>, performing at
+              senior care homes through <strong>Alberta Health Services</strong>
+              .
+            </div>
+            <div className={classes.subItem}>
+              Ellie holds a{" "}
+              <strong>
+                <a href="./AhhyunKimPoliceRecord2025.pdf" target="_blank">
+                  clear Police Information Check, including a Vulnerable Sector
+                  Search
+                </a>
+              </strong>
+              , ensuring a safe and secure learning environment for our
+              students.
+            </div>
+          </div>
+
+          <br />
+          <br />
+
+          {/* ── Alex ── */}
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
@@ -47,8 +112,8 @@ export default function ProfilePage(props) {
               <img
                 alt="Alex - West Hillhurst Violin and Piano"
                 src="./img/Alex.jpg"
-                height="500px"
-                className={classes.teacherPhoto}
+                className={classes.teacherPhotoResponsive}
+                style={{ maxWidth: "420px" }}
               />
             </GridItem>
           </GridContainer>
@@ -113,8 +178,11 @@ export default function ProfilePage(props) {
               working closely with children.
             </div>
           </div>
+
           <br />
           <br />
+
+          {/* ── Lym ── */}
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
@@ -122,7 +190,9 @@ export default function ProfilePage(props) {
                   <h3 className={classes.title} style={{ margin: "0" }}>
                     Lym Kim - Piano & Violin
                   </h3>
-                  <h4 className={classes.titleSub}>RCM Registered Teacher</h4>
+                  <h4 className={classes.titleSub}>
+                    RCM Registered Teacher | Suzuki Certified Teacher
+                  </h4>
                 </div>
               </div>
               <div className={classes.photoRow}>
@@ -193,14 +263,14 @@ export default function ProfilePage(props) {
               violinist, a former concertmaster of the Novosibirsk Philharmonic
               Orchestra, and a direct student of Zakhar Bron—the legendary
               mentor of Maxim Vengerov and Vadim Repin. This immersive
-              mentorship helped her absorb the bowing , phrasing techniques of
+              mentorship helped her absorb the bowing, phrasing techniques of
               the Russian violin school.
             </div>
             <div className={classes.subItem}>
               In 2009, she was invited to perform at the Seoul Spring Chamber
               Music Festival, a prestigious gathering of top-tier international
               musicians. From 2014 to 2015, she served as a music teacher at
-              Busan Foreign School an international school in South Korea.
+              Busan Foreign School, an international school in South Korea.
             </div>
             <div className={classes.subItem}>
               Throughout her career, she served as 1st violinist with the York
@@ -211,12 +281,13 @@ export default function ProfilePage(props) {
               Mississauga, collaborating with local professional musicians.
             </div>
             <div className={classes.subItem}>
-              Mrs. Lym is a certified Suzuki teacher, having completed Suzuki
-              pedagogy training at the Royal Conservatory of Music in Toronto.
-              She is a proud member of the Suzuki Association of the Americas
-              (Member #: 115618), the American Federation of Musicians (AFM),
-              and a certified teacher of the Royal Conservatory of Music (RCM
-              Teacher #: 108136), fully qualified to prepare students for RCM
+              Mrs. Lym is a <strong>certified Suzuki teacher</strong>, having
+              completed Suzuki pedagogy training at the Royal Conservatory of
+              Music in Toronto. She is a proud member of the{" "}
+              <strong>Suzuki Association of the Americas</strong> (Member #:
+              115618), the American Federation of Musicians (AFM), and a
+              certified teacher of the Royal Conservatory of Music (RCM Teacher
+              #: 108136), fully qualified to prepare students for RCM
               examinations. She also holds a clean criminal record.
             </div>
           </div>
