@@ -48,7 +48,6 @@
     "sass": "1.54.4",
     "styled-components": "5.3.5",
     "webpack": "^5.84.1",
-    "yarn": "^1.22.19"
   },
   "peerDependencies": {
     "react": ">=16.0.0",
