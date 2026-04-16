@@ -262,9 +262,13 @@ export default function ProfilePage(props) {
               She also received daily private lessons from a Russian master
               violinist, a former concertmaster of the Novosibirsk Philharmonic
               Orchestra, and a direct student of Zakhar Bron—the legendary
-              mentor of Maxim Vengerov and Vadim Repin. This immersive
-              mentorship helped her absorb the bowing, phrasing techniques of
-              the Russian violin school.
+              mentor of Maxim Vengerov and Vadim Repin. This mentorship helped
+              her absorb the bowing, phrasing techniques of the Russian violin
+              school.&nbsp;
+              <a href="https://youtu.be/fCi9W6p1nHI" target="_blank">
+                Watch Lym take a lesson with a Russian master violinist
+              </a>
+              .
             </div>
             <div className={classes.subItem}>
               In 2009, she was invited to perform at the Seoul Spring Chamber

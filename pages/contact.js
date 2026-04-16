@@ -23,14 +23,14 @@ export default function ContactPage(props) {
   return (
     <div>
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
-      <Parallax filter image="/img/bg8.jpg" />
+      <Parallax filter image="/img/home/4.jpg" />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
                 <div className={classes.name}>
-                  <h3 className={classes.title}>Contact Lym</h3>
+                  <h3 className={classes.title}>Contact us</h3>
                 </div>
               </div>
             </GridItem>
