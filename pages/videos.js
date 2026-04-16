@@ -1,9 +1,6 @@
 import React from "react";
-// nodejs divbrary that concatenates classes
 import classNames from "classnames";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-// core components
 import YouTube from "react-youtube";
 import Header from "/components/Header/Header.js";
 import Footer from "/components/Footer/Footer.js";
@@ -14,16 +11,45 @@ import styles from "/styles/jss/nextjs-material-kit/pages/profilePage.js";
 
 const useStyles = makeStyles(styles);
 
-export default function VideoPage(props) {
-  const classes = useStyles();
-  const { ...rest } = props;
+// 반응형 비디오 wrapper 스타일
+const videoWrapperStyle = {
+  position: "relative",
+  paddingBottom: "56.25%", // 16:9 비율
+  height: 0,
+  overflow: "hidden",
+  width: "100%",
+  marginBottom: "16px",
+};
+
+const iframeStyle = {
+  position: "absolute",
+  top: 0,
+  left: 0,
+  width: "100%",
+  height: "100%",
+};
+
+// 반응형 YouTube 컴포넌트
+function ResponsiveYouTube({ videoId }) {
   const opts = {
-    height: "563",
-    width: "1000",
+    width: "100%",
+    height: "100%",
     playerVars: {
       autoplay: 0,
     },
   };
+
+  return (
+    <div style={videoWrapperStyle}>
+      <YouTube videoId={videoId} opts={opts} style={iframeStyle} />
+    </div>
+  );
+}
+
+export default function VideoPage(props) {
+  const classes = useStyles();
+  const { ...rest } = props;
+
   return (
     <div>
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
@@ -38,26 +64,24 @@ export default function VideoPage(props) {
           <div className={classes.videoExpl}>
             Lym can be seen at 1:59 & 2:43 when viewed in full screen.
           </div>
-          <YouTube videoId="1RWD7yMxlTA" opts={opts} />
-          <br />
+          <ResponsiveYouTube videoId="1RWD7yMxlTA" />
+          <div className={classes.videoExpl}>
+            14 yr old Lym Playing Ave Maria at 1:22:10
+          </div>
+          <ResponsiveYouTube videoId="KPOfLKeoJ4w" />
+          <div className={classes.videoExpl}>
+            Teacher Lym performing/learning the Mendelssohn Violin Concerto at
+            age 14.
+          </div>
+          <ResponsiveYouTube videoId="fCi9W6p1nHI" />
+
           <h3 className={classes.title}>
             West Hillhurst Piano & Violin 2024 Spring Recital{" "}
           </h3>
           <div className={classes.videoExpl}>Full version: 29 mins 27 sec</div>
-          <YouTube videoId="gt7pxfuwCYk" opts={opts} />
+          <ResponsiveYouTube videoId="gt7pxfuwCYk" />
           <div className={classes.videoExpl}>Short version: 4 mins 8 sec</div>
-          <YouTube videoId="S_EQx6aTzk4" opts={opts} />
-          <br />
-          <h3 className={classes.title}>Student Video</h3>
-          <YouTube videoId="tTrwSdU9B84" opts={opts} />
-          <br />
-          <YouTube videoId="qLFtiyCBWfc" opts={opts} />
-          <br />
-          <YouTube videoId="Spp8tlvlMxc" opts={opts} />
-          <br />
-          <YouTube videoId="GcEJTZ1XGJ8" opts={opts} />
-          <br />
-          <YouTube videoId="PZelpcdYjL4" opts={opts} />
+          <ResponsiveYouTube videoId="S_EQx6aTzk4" />
         </div>
       </div>
       <Footer />
