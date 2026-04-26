@@ -21,7 +21,7 @@ export default function StudentPage(props) {
   const imageClasses = classNames(
     classes.imgRaised,
     classes.imgRoundedCircle,
-    classes.imgFluid,
+    classes.imgFluid
   );
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
@@ -35,7 +35,7 @@ export default function StudentPage(props) {
               <GridItem xs={12} sm={12} md={6}>
                 <div className={classes.profile}>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Our Students</h3>
+                    <h3 className={classes.title}>Lym's Students</h3>
                   </div>
                 </div>
               </GridItem>
