@@ -9,7 +9,18 @@ import HeaderLinks from "/components/Header/HeaderLinks.js";
 import Link from "next/link";
 import styles from "/styles/jss/nextjs-material-kit/pages/profilePage.js";
 
-const useStyles = makeStyles(styles);
+const useStyles = makeStyles({
+  ...styles,
+  heroSlider: {
+    position: "relative",
+    width: "100%",
+    height: "90vh",
+    overflow: "hidden",
+    "@media (max-width: 768px)": {
+      height: "600px",
+    },
+  },
+});
 
 const images = [
   "/img/home/1.jpg",
@@ -18,43 +29,74 @@ const images = [
   "/img/home/4.jpg",
 ];
 
-function HeroSlider() {
+const media = [
+  { type: "image", src: "/img/home/1.jpg" },
+  { type: "image", src: "/img/home/2.jpg" },
+  { type: "image", src: "/img/home/3.jpg" },
+  { type: "image", src: "/img/home/4.jpg" },
+  { type: "image", src: "/img/home/5.jpg" },
+  //{ type: "video", src: "https://www.youtube.com/watch?v=5K5Y_MRlC1g" },
+];
+
+function HeroSlider({ classes }) {
   const [current, setCurrent] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
+      setCurrent((prev) => (prev + 1) % media.length);
     }, 5000);
     return () => clearInterval(timer);
   }, []);
 
-  const prev = () => setCurrent((current - 1 + images.length) % images.length);
-  const next = () => setCurrent((current + 1) % images.length);
+  const prev = () => setCurrent((current - 1 + media.length) % media.length);
+  const next = () => setCurrent((current + 1) % media.length);
 
   return (
     <div
+      className={classes.heroSlider}
       style={{
         position: "relative",
         width: "100%",
-        height: "600px",
         overflow: "hidden",
       }}
     >
-      {images.map((src, i) => (
-        <div
-          key={i}
-          style={{
-            position: "absolute",
-            inset: 0,
-            backgroundImage: `url(${src})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            opacity: i === current ? 1 : 0,
-            transition: "opacity 1s ease-in-out",
-            filter: "brightness(0.55)",
-          }}
-        />
-      ))}
+      {media.map((item, i) => {
+        const isVideo = item.type === "video";
+        const src = isVideo
+          ? `${item.src.replace("watch?v=", "embed/")}?autoplay=1`
+          : item.src;
+        return isVideo ? (
+          <iframe
+            key={i}
+            src={src}
+            style={{
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+              border: "none",
+              opacity: i === current ? 1 : 0,
+              transition: "opacity 1s ease-in-out",
+            }}
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          />
+        ) : (
+          <div
+            key={i}
+            style={{
+              position: "absolute",
+              inset: 0,
+              backgroundImage: `url(${src})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              opacity: i === current ? 1 : 0,
+              transition: "opacity 1s ease-in-out",
+              filter: "brightness(0.55)",
+            }}
+          />
+        );
+      })}
 
       {/* 좌 화살표 */}
       <button
@@ -120,7 +162,7 @@ function HeroSlider() {
           zIndex: 10,
         }}
       >
-        {images.map((_, i) => (
+        {media.map((_, i) => (
           <button
             key={i}
             onClick={() => setCurrent(i)}
@@ -147,7 +189,7 @@ export default function HomePage(props) {
   return (
     <div>
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
-      <HeroSlider />
+      <HeroSlider classes={classes} />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <GridContainer justify="center">

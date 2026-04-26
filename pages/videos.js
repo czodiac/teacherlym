@@ -82,6 +82,11 @@ export default function VideoPage(props) {
           <ResponsiveYouTube videoId="gt7pxfuwCYk" />
           <div className={classes.videoExpl}>Short version: 4 mins 8 sec</div>
           <ResponsiveYouTube videoId="S_EQx6aTzk4" />
+
+          <h3 className={classes.title}>
+            Yuki performs at the Calgary Performing Arts Festival{" "}
+          </h3>
+          <ResponsiveYouTube videoId="rspJoetzzKc" />
         </div>
       </div>
       <Footer />
