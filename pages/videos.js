@@ -59,7 +59,7 @@ export default function VideoPage(props) {
       >
         <div className={classes.container}>
           <h3 className={classes.title} style={{ padding: "20px 0 0 0" }}>
-            Lym's Video
+            Videos
           </h3>
           <div className={classes.videoExpl}>
             Lym can be seen at 1:59 & 2:43 when viewed in full screen.
@@ -76,12 +76,16 @@ export default function VideoPage(props) {
           <ResponsiveYouTube videoId="fCi9W6p1nHI" />
 
           <h3 className={classes.title}>
+            West Hillhurst Piano & Violin 2026 Spring Recital{" "}
+          </h3>
+          <div className={classes.videoExpl}>26 mins 47 sec</div>
+          <ResponsiveYouTube videoId="aHCBYbrNHKg" />
+
+          <h3 className={classes.title}>
             West Hillhurst Piano & Violin 2024 Spring Recital{" "}
           </h3>
-          <div className={classes.videoExpl}>Full version: 29 mins 27 sec</div>
+          <div className={classes.videoExpl}>29 mins 27 sec</div>
           <ResponsiveYouTube videoId="gt7pxfuwCYk" />
-          <div className={classes.videoExpl}>Short version: 4 mins 8 sec</div>
-          <ResponsiveYouTube videoId="S_EQx6aTzk4" />
 
           <h3 className={classes.title}>
             Yuki performs at the Calgary Performing Arts Festival{" "}

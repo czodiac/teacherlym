@@ -27,6 +27,9 @@ const images = [
   "/img/home/2.jpg",
   "/img/home/3.jpg",
   "/img/home/4.jpg",
+  "/img/home/5.jpg",
+  "/img/home/6.jpg",
+  "/img/home/7.jpg",
 ];
 
 const media = [
@@ -35,6 +38,8 @@ const media = [
   { type: "image", src: "/img/home/3.jpg" },
   { type: "image", src: "/img/home/4.jpg" },
   { type: "image", src: "/img/home/5.jpg" },
+  { type: "image", src: "/img/home/6.jpg" },
+  { type: "image", src: "/img/home/7.jpg" },
   //{ type: "video", src: "https://www.youtube.com/watch?v=5K5Y_MRlC1g" },
 ];
 

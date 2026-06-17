@@ -34,7 +34,7 @@ export default function HomePage(props) {
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
       <div style={{ height: "110px" }}></div>
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfnJbj2pYNH781k3nGunBlyjiGiAB7IQYTShVyD8mbIyPiA4w/viewform?usp=header"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSe9GQghZKz7CVI7kWCC0G9k1BkME6dUsVxzAWymXzQfY2fxhw/viewform"
         width="100%"
         height="3868"
         frameBorder="0"
