@@ -24,7 +24,7 @@ export default function PolicyPage(props) {
   const imageClasses = classNames(
     classes.imgRaised,
     classes.imgRoundedCircle,
-    classes.imgFluid
+    classes.imgFluid,
   );
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
@@ -48,39 +48,39 @@ export default function PolicyPage(props) {
               Rates are based on the number of weeks in each month.
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                30 minute session: $42 per session
+                30 minute session: $44 per session
               </ListItem>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $168 per month (for 4 weeks)
+                $176 per month (for 4 weeks)
               </div>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $210 per month (for 5 weeks)
+                $220 per month (for 5 weeks)
               </div>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />
-                45 minute session: $62 per session
+                45 minute session: $66 per session
               </ListItem>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $248 per month (for 4 weeks)
+                $264 per month (for 4 weeks)
               </div>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $310 per month (for 5 weeks)
+                $330 per month (for 5 weeks)
               </div>
               <ListItem>
                 <KeyboardArrowRightIcon className={classes.chkIcon} />1 hour
-                session: $80 per session
+                session: $88 per session
               </ListItem>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $320 per month (for 4 weeks)
+                $352 per month (for 4 weeks)
               </div>
               <div className={classes.subListItem}>
                 <KeyboardArrowRightIcon className={classes.chkIconSub} />
-                $400 per month (for 5 weeks)
+                $440 per month (for 5 weeks)
               </div>
               <div className={classes.marginTop}>
                 * For July and August, no monthly payment is required. You can
@@ -149,7 +149,27 @@ export default function PolicyPage(props) {
             <h4 className={classes.subTitle}>Why No Make-Up Lessons?</h4>
             <ListItem>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
-              Reserved Time Slots: Each student’s lesson time is reserved
+              As a busy studio with high-demand time slots, we can only sell
+              limited slots per week since normal students can come after school
+              between 4-8 PM.
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              We can only sell those times for our business to maximize popular
+              demand on that time; we sell those slots to those who are willing
+              to commit weekly, so we prioritize those who commit and do not
+              sell one- off lessons.
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Unlike a medical professional office, our school finds it hard to
+              resell those times even with students' notice in advance because
+              most students are looking for recurring slots, not one-off
+              lessons.
+            </ListItem>
+            <ListItem>
+              <KeyboardArrowRightIcon className={classes.chkIcon} />
+              Reserved Time Slots: Each student's lesson time is reserved
               exclusively for them. A make-up lesson policy would disrupt the
               schedule and fairness for other students.
             </ListItem>
@@ -158,8 +178,7 @@ export default function PolicyPage(props) {
               Full Schedule: Given the full schedule, accommodating make-up
               lessons is very difficult.
             </ListItem>
-            <ListItem>
-              <KeyboardArrowRightIcon className={classes.chkIcon} />
+            <ListItem className={classes.left}>
               Most music lesson providers choose not to offer make-up lessons as
               a standard policy. This ensures consistent scheduling and allows
               teachers to maintain a reliable lesson structure.
