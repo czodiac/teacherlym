@@ -34,7 +34,7 @@ export default function ProfilePage(props) {
               <div className={classes.profile}>
                 <div className={classes.name}>
                   <h3 className={classes.title} style={{ margin: "0" }}>
-                    Ellie (Ahhyun) Kim – Piano & Ukulele
+                    Ellie (Ahhyun) Kim – Piano
                   </h3>
                   <h4 className={classes.titleSub}>
                     RCM Certified | Yamaha Certified
@@ -102,7 +102,7 @@ export default function ProfilePage(props) {
               <div className={classes.profile}>
                 <div className={classes.name}>
                   <h3 className={classes.title} style={{ margin: "0" }}>
-                    Alex Paisit Tangkitsiri – Piano
+                    Alex Tangkitsiri – Piano & Music Theory
                   </h3>
                   <h4 className={classes.titleSub}>
                     RCM Registered Teacher | Yamaha Certified Instructor
@@ -176,6 +176,72 @@ export default function ProfilePage(props) {
               through the Calgary Police Service. This is the most comprehensive
               and stringent background screening required for professionals
               working closely with children.
+            </div>
+          </div>
+
+          <br />
+          <br />
+
+          {/* ── Se young ── */}
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={6}>
+              <div className={classes.profile}>
+                <div className={classes.name}>
+                  <h3 className={classes.title} style={{ margin: "0" }}>
+                    Chloe Park – Piano & Violin
+                  </h3>
+                </div>
+              </div>
+              <img
+                alt="Chloe - West Hillhurst Violin and Piano"
+                src="./img/Chloe.jpg"
+                className={classes.teacherPhotoResponsive}
+                style={{ maxWidth: "420px" }}
+              />
+            </GridItem>
+          </GridContainer>
+          <div className={classes.description}>
+            <div className={classes.subItem}>
+              Chloe is a warm and dedicated violin and piano instructor with
+              experience in music education, performance, and ensemble
+              activities in South Korea.
+            </div>
+            <div className={classes.subItem}>
+              She performed as a violinist with the Pukyong Chamber Orchestra
+              and the Sejong Orchestra, where she developed strong ensemble
+              skills, musical discipline, and an appreciation for collaborative
+              performance. These experiences strengthened her foundation in
+              classical music, rhythm, intonation, listening skills, and musical
+              expression.
+            </div>
+            <div className={classes.subItem}>
+              Chloe also taught young students at Yuljeu Music Academy in Busan,
+              South Korea. Her musical training includes piano studies at
+              Spokane Falls Community College in Washington State. She enjoys
+              helping children build strong musical foundations and develop
+              confidence through patient, encouraging, and structured
+              instruction.
+            </div>
+            <div className={classes.subItem}>
+              Her lessons focus on basic technique, posture, rhythm,
+              note-reading, and musical expression and are adapted to each
+              student’s age, ability, and learning pace. She aims to create a
+              supportive environment where students can develop good practice
+              habits, improve step by step, and enjoy expressing themselves
+              through music.
+            </div>
+            <div className={classes.subItem}>
+              In addition to her musical background, Chloe holds a Master of
+              Public Administration from the University of Colorado Denver. Her
+              academic and professional experience has strengthened her
+              communication, organization, leadership, and problem-solving
+              skills, which she brings into her lessons and interactions with
+              students and parents.
+            </div>
+            <div className={classes.subItem}>
+              Chloe holds a clear Police Information Check, including a
+              Vulnerable Sector Search, helping ensure a safe and secure
+              learning environment for students.
             </div>
           </div>
 
