@@ -61,7 +61,7 @@ export default function Header(props) {
     [classes.fixed]: fixed,
   });
   const brandComponent = (
-    <Link href="/profile" as="/profile">
+    <Link href="/home" as="/home">
       <img
         alt="West Hillhurst Violin and Piano"
         src="./img/logo.gif"

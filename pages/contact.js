@@ -51,10 +51,21 @@ export default function ContactPage(props) {
               <KeyboardArrowRightIcon className={classes.chkIcon} />
               <strong>Email: </strong>
               <a href="mailto:admin@lymteacher.com">admin@lymteacher.com</a>
+              <span
+                style={{ marginLeft: "24px", fontSize: "0.9em", color: "#777" }}
+              >
+                * We typically respond within 1 day.
+              </span>
             </div>
             <div className={classes.subItem}>
               <KeyboardArrowRightIcon className={classes.chkIcon} />
-              <strong>Mobile: </strong> (403) 689-6485
+              <strong>Text Us: </strong> (403) 689-6485
+              <span
+                style={{ marginLeft: "24px", fontSize: "0.9em", color: "#777" }}
+              >
+                * We will get back to you within 24 hours or as soon as
+                possible.
+              </span>
             </div>
           </div>
         </div>

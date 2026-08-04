@@ -254,7 +254,7 @@ export default function ProfilePage(props) {
               <div className={classes.profile}>
                 <div className={classes.name}>
                   <h3 className={classes.title} style={{ margin: "0" }}>
-                    Lym Kim - Piano & Violin
+                    Lym Lee - Piano & Violin
                   </h3>
                   <h4 className={classes.titleSub}>
                     RCM Registered Teacher | Suzuki Certified Teacher
@@ -277,7 +277,7 @@ export default function ProfilePage(props) {
           </GridContainer>
           <div className={classes.description}>
             <div className={classes.subItem}>
-              Lym Kim is a skilled violinist and pianist whose teaching method
+              Lym Lee is a skilled violinist and pianist whose teaching method
               uniquely combines the Suzuki and Shinozaki approaches. While the
               Suzuki method emphasizes learning music by ear and listening, the
               Shinozaki method focuses more on music theory and academic study.

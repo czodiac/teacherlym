@@ -48,16 +48,7 @@ export default function HeaderLinks(props) {
             Register
           </Button>
         </Link>
-        <Link href="/kids_piano" passHref>
-          <Button
-            className={`${classes.navLink} ${
-              isActive("kids_piano") && classes.navLinkActive
-            }`}
-            color="transparent"
-          >
-            Kids' Piano
-          </Button>
-        </Link>
+
         <Link href="/profile" passHref>
           <Button
             className={`${classes.navLink} ${
@@ -78,14 +69,14 @@ export default function HeaderLinks(props) {
             Rate/Policy
           </Button>
         </Link>
-        <Link href="/student" passHref>
+        <Link href="/existing_student" passHref>
           <Button
             className={`${classes.navLink} ${
               isActive("student") && classes.navLinkActive
             }`}
             color="transparent"
           >
-            Students
+            Student Login
           </Button>
         </Link>
         <Link href="/videos" passHref>
@@ -96,6 +87,17 @@ export default function HeaderLinks(props) {
             color="transparent"
           >
             Videos
+          </Button>
+        </Link>
+
+        <Link href="/kids_piano" passHref>
+          <Button
+            className={`${classes.navLink} ${
+              isActive("kids_piano") && classes.navLinkActive
+            }`}
+            color="transparent"
+          >
+            Kids' Piano
           </Button>
         </Link>
         <Link href="/contact" passHref>
