@@ -67,8 +67,29 @@ export default function ExistingStudent(props) {
         <div style={{ marginTop: "30px" }}>
           <h3 className={classes.subTitle}>New Here?</h3>
           <div>
-            If you don't have an account yet, please use the form below to sign
-            up and get started.
+            Please review and complete the policy agreement form below before
+            signing up. Then complete the sign-up form.
+          </div>
+          <div style={{ margin: "10px 0 0 0" }}>
+            <iframe
+              src="https://forms.gle/rGh5wAihmjJbhrkW6"
+              width="100%"
+              height="400"
+              style={{ border: "1px solid #ddd", borderRadius: "6px" }}
+              title="Policy Agreement Form"
+            >
+              Loading…
+            </iframe>
+          </div>
+          <div
+            style={{
+              fontSize: "22px",
+              fontWeight: "bold",
+              textAlign: "center",
+              marginTop: "10px",
+            }}
+          >
+            Sign up Form
           </div>
           <div
             id="signup-widget-container"

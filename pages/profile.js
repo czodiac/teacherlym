@@ -25,77 +25,8 @@ export default function ProfilePage(props) {
     <div>
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
       <div className={classNames(classes.main, classes.mainNoParallax)}>
+        <br />
         <div className={classes.container}>
-          <br />
-
-          {/* ── Ellie (Ahhyun) Kim ── */}
-          <GridContainer justify="center">
-            <GridItem xs={12} sm={12} md={6}>
-              <div className={classes.profile}>
-                <div className={classes.name}>
-                  <h3 className={classes.title} style={{ margin: "0" }}>
-                    Ellie (Ahhyun) Kim – Piano
-                  </h3>
-                  <h4 className={classes.titleSub}>
-                    RCM Certified | Yamaha Certified
-                  </h4>
-                </div>
-              </div>
-              <img
-                alt="Ellie (Ahhyun) Kim - West Hillhurst Violin and Piano"
-                src="/img/AhhyunKim.jpeg"
-                className={classes.teacherPhotoResponsive}
-              />
-            </GridItem>
-          </GridContainer>
-          <div className={classes.description}>
-            <div className={classes.subItem}>
-              Ellie is a warm and dedicated piano instructor who truly loves
-              teaching young children. She holds a{" "}
-              <strong>Bachelor of Piano Performance</strong> and is an
-              officially <strong>RCM Level 8 Certified Teacher</strong>.
-            </div>
-            <div className={classes.subItem}>
-              Ellie also teaches at <strong>Yamaha Music School</strong>, where
-              she applies Yamaha's proven teaching system to help students build
-              strong musical foundations, develop excellent technique, and
-              enhance their overall musicianship.
-            </div>
-            <div className={classes.subItem}>
-              She has experience teaching students of all ages and levels and is
-              known for creating engaging, personalized lessons that support
-              each student's unique learning style. Ellie places a strong
-              emphasis on both technical development and musical expression,
-              helping students grow with confidence and enjoyment.
-            </div>
-            <div className={classes.subItem}>
-              Ellie is especially recognized for her ability to connect with
-              young students, creating a warm and supportive environment where
-              they feel motivated, supported, and inspired to develop a lifelong
-              love of music.
-            </div>
-            <div className={classes.subItem}>
-              In addition to teaching, Ellie actively gives back to the Calgary
-              community as a <strong>volunteer pianist</strong>, performing at
-              senior care homes through <strong>Alberta Health Services</strong>
-              .
-            </div>
-            <div className={classes.subItem}>
-              Ellie holds a{" "}
-              <strong>
-                <a href="./AhhyunKimPoliceRecord2025.pdf" target="_blank">
-                  clear Police Information Check, including a Vulnerable Sector
-                  Search
-                </a>
-              </strong>
-              , ensuring a safe and secure learning environment for our
-              students.
-            </div>
-          </div>
-
-          <br />
-          <br />
-
           {/* ── Alex ── */}
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
@@ -217,10 +148,9 @@ export default function ProfilePage(props) {
             <div className={classes.subItem}>
               Chloe also taught young students at Yuljeu Music Academy in Busan,
               South Korea. Her musical training includes piano studies at
-              Spokane Falls Community College in Washington State. She enjoys
-              helping children build strong musical foundations and develop
-              confidence through patient, encouraging, and structured
-              instruction.
+              Spokane Falls College in Washington State. She enjoys helping
+              children build strong musical foundations and develop confidence
+              through patient, encouraging, and structured instruction.
             </div>
             <div className={classes.subItem}>
               Her lessons focus on basic technique, posture, rhythm,
