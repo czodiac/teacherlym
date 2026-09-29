@@ -218,23 +218,30 @@ export default function HomePage(props) {
             </GridItem>
           </GridContainer>
           <div className={classes.description}>
-            <div
-              className={classes.subItem}
-              style={{ fontSize: "1.1rem", lineHeight: "1.8" }}
-            >
-              A safe and warm space where mistakes are welcome — and real
-              learning begins.
+            <div className={classes.subItem}>
+              <b>No long-term commitment required!</b> You may discontinue
+              lessons at any time with 30 days’ notice.{" "}
             </div>
             <div className={classes.subItem}>
-              Every student is different. We provide a calm and non-intimidating
-              learning environment where attention is given to each student's
-              personality and pace — from curious children to lifelong adult
-              learners.
+              <b>
+                <a href="/register" rel="noopener noreferrer">
+                  Click here
+                </a>{" "}
+                to view available time slots.
+              </b>{" "}
+              Sign up and pay for a trial lesson instantly, or register for
+              regular lessons.
             </div>
             <div className={classes.subItem}>
-              If you are looking for a place where you or your child feels safe,
-              respected, and encouraged to grow, we would be happy to work
-              together.
+              You may also{" "}
+              <a
+                href="https://forms.gle/x8yNLUJGQctQHe4j6"
+                target="_blank"
+                className={classes.availabilityLink}
+              >
+                join our waitlist
+              </a>{" "}
+              if preferred times are unavailable.
             </div>
           </div>
         </div>

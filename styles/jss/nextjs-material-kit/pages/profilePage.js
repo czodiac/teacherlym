@@ -60,6 +60,13 @@ const profilePageStyle = {
     margin: "10px 0 0 0",
     textAlign: "left",
   },
+  registerTitle: {
+    fontSize: "1.2rem",
+    fontWeight: 700,
+    margin: "0 0 0px",
+    textAlign: "center",
+    color: "#6b2f10",
+  },
   navWrapper: {
     margin: "20px auto 50px auto",
     textAlign: "center",

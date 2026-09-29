@@ -54,8 +54,15 @@ export default function ExistingStudent(props) {
       <Header rightLinks={<HeaderLinks />} fixed {...rest} />
       <div style={{ height: "110px" }}></div>
 
-      <div style={{ maxWidth: "700px", margin: "0 auto", padding: "0 20px" }}>
-        <h3 className={classes.title}>Current Student Login</h3>
+      <div
+        style={{
+          maxWidth: "700px",
+          margin: "10px auto",
+          textAlign: "center",
+          padding: "0 20px",
+        }}
+      >
+        <h3 className={classes.registerTitle}>Current Student Login</h3>
         <div
           id="widget-container"
           style={{
@@ -64,8 +71,8 @@ export default function ExistingStudent(props) {
           }}
         ></div>
 
-        <div style={{ marginTop: "30px" }}>
-          <h3 className={classes.subTitle}>New Here?</h3>
+        <div style={{ marginTop: "30px", color: "#6b2f10" }}>
+          <h3 className={classes.registerTitle}>New Here?</h3>
           <div>
             Please review and complete the policy agreement form below before
             signing up. Then complete the sign-up form.

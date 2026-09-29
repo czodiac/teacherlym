@@ -23,7 +23,7 @@ export default function HeaderLinks(props) {
       <div className={classes.topBanner}>
         <Link href="/register" className={classes.whiteLink} passHref>
           <a className={classes.whiteLink}>
-            Click here to register for the 2026-2027 school year!
+            Register for 2026-2027! No long-term commitment!
           </a>
         </Link>
       </div>
