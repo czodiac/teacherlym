@@ -123,12 +123,19 @@ export default function ProfilePage(props) {
                   </h3>
                 </div>
               </div>
-              <img
-                alt="Chloe - West Hillhurst Violin and Piano"
-                src="./img/Chloe.jpg"
-                className={classes.teacherPhotoResponsive}
-                style={{ maxWidth: "420px" }}
-              />
+
+              <div className={classes.photoRow}>
+                <img
+                  alt="Lym - West Hillhurst Violin and Piano"
+                  src="./img/Chloe.jpg"
+                  className={classes.photoRowItem}
+                />
+                <img
+                  alt="Lym 2 - West Hillhurst Violin and Piano"
+                  src="./img/Chloe2.jpg"
+                  className={classes.photoRowItem}
+                />
+              </div>
             </GridItem>
           </GridContainer>
           <div className={classes.description}>

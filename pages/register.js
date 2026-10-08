@@ -117,8 +117,8 @@ export default function HomePage(props) {
           <h3 className={classes.registerTitle}>Check Current Availability</h3>
           <p className={classes.availabilityText}>
             <b>For a trial lesson</b>, select the 30-Min Trial Lesson category,
-            choose a time slot, sign up, and make your payment. Trial lesson
-            payments are non-refundable.
+            choose a time slot, sign up, and make your payment. Trial lessons
+            are non-refundable and non-reschedulable.
           </p>
           <p className={classes.availabilityText}>
             <b>For regular enrollment</b>, select a weekly lesson slot, then
