@@ -121,10 +121,10 @@ export default function HomePage(props) {
             are non-refundable and non-reschedulable.
           </p>
           <p className={classes.availabilityText}>
-            <b>For regular enrollment</b>, select a weekly lesson slot, then
-            view available times using the Calendar. Complete the Google
-            Registration Form below. Don't click Next button below Calendar to
-            sign up.
+            <b>For regular weekly lessons</b>, select a weekly lesson slot
+            category to view available times in the calendar. But, do not click
+            'Next' or 'Sign up' in the calendar to register; complete the Google
+            Registration Form below instead.
           </p>
           <p className={classes.availabilityText}>
             Need 45 or 60 minute lesson, or any assistance?{" "}
