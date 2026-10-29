@@ -120,13 +120,19 @@ export default function HomePage(props) {
             are non-refundable and non-reschedulable.
           </p>
           <p className={classes.availabilityText}>
-            <b>For recurring weekly lessons,</b>, Our team will review
-            availability and follow up with available lesson times within 24–48
-            hours. Have a question?{" "}
+            <b>For recurring weekly lessons,</b> complete the Google
+            Registration Form below. Our team will review availability and
+            follow up with available lesson times within 24–48 hours.
+          </p>
+          <p className={classes.availabilityText}>
+            Have a question?{" "}
             <a href="/contact" className={classes.availabilityLink}>
               Contact Us
             </a>
-            . If your preferred lesson time is unavailable, you may also{" "}
+            .
+          </p>
+          <p className={classes.availabilityText}>
+            If your preferred lesson time is unavailable, you may also{" "}
             <a
               href="https://forms.gle/x8yNLUJGQctQHe4j6"
               target="_blank"

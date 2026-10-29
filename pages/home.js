@@ -223,7 +223,7 @@ export default function HomePage(props) {
               lessons at any time with 30 days’ notice.{" "}
             </div>
             <div className={classes.subItem}>
-              Book lessons all year.
+              Book lessons all year.&nbsp;
               <a href="/register" rel="noopener noreferrer">
                 Register for weekly lessons or book & pay for a trial lesson
                 online.
