@@ -114,37 +114,31 @@ export default function HomePage(props) {
       {/* Availability */}
       <div className={classes.availabilityArea}>
         <div className={classes.availability}>
-          <h3 className={classes.registerTitle}>Check Current Availability</h3>
           <p className={classes.availabilityText}>
             <b>For a trial lesson</b>, select the 30-Min Trial Lesson category,
             choose a time slot, sign up, and make your payment. Trial lessons
             are non-refundable and non-reschedulable.
           </p>
           <p className={classes.availabilityText}>
-            <b>For regular weekly lessons</b>, select a weekly lesson slot
-            category to view available times in the calendar. But, do not click
-            'Next' or 'Sign up' in the calendar to register; complete the Google
-            Registration Form below instead.
-          </p>
-          <p className={classes.availabilityText}>
-            Need 45 or 60 minute lesson, or any assistance?{" "}
+            <b>For recurring weekly lessons,</b>, Our team will review
+            availability and follow up with available lesson times within 24–48
+            hours. Have a question?{" "}
             <a href="/contact" className={classes.availabilityLink}>
               Contact Us
             </a>
-            <br></br>
-            Don't see a time that works for you?{" "}
+            . If your preferred lesson time is unavailable, you may also{" "}
             <a
               href="https://forms.gle/x8yNLUJGQctQHe4j6"
               target="_blank"
               className={classes.availabilityLink}
             >
-              Join the Waitlist
+              join our Waitlist
             </a>
+            .
           </p>
         </div>
         <div ref={widgetRef}></div>
       </div>
-
       <div
         className={classes.availabilityArea}
         style={{

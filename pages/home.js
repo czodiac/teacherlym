@@ -223,14 +223,11 @@ export default function HomePage(props) {
               lessons at any time with 30 days’ notice.{" "}
             </div>
             <div className={classes.subItem}>
-              <b>
-                <a href="/register" rel="noopener noreferrer">
-                  Click here
-                </a>{" "}
-                to view available time slots.
-              </b>{" "}
-              Sign up and pay for a trial lesson instantly, or register for
-              regular lessons.
+              Book lessons all year.
+              <a href="/register" rel="noopener noreferrer">
+                Register for weekly lessons or book & pay for a trial lesson
+                online.
+              </a>
             </div>
             <div className={classes.subItem}>
               You may also{" "}
